@@ -1,0 +1,73 @@
+/* From Uiverse.io by dhanushrs1 */
+.button1 {
+  --color: #2e42ff;
+  padding: 0.6em 2em;
+  background-color: transparent;
+  border-radius: 0.6em;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-weight: 700;
+  font-size: 17px;
+  border: 2px solid var(--color);
+  font-family: inherit;
+  text-transform: uppercase;
+  color: #ffffff;
+  z-index: 1;
+  display: inline-block;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.button1::before,
+.button1::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: var(--color);
+  transition: 0.7s ease-in-out;
+}
+
+.button1::before {
+  top: -1em;
+  left: -1em;
+}
+
+.button1::after {
+  left: calc(100% + 1em);
+  top: calc(100% + 1em);
+}
+
+.button1:hover::before,
+.button1:hover::after {
+  height: 410px;
+  width: 410px;
+}
+
+.button1:hover {
+  background: linear-gradient(135deg, #2e42ff, #6a75ff);
+  color: #ffffff;
+  border-color: #6a75ff;
+  box-shadow: 0 6px 15px rgba(46, 66, 255, 0.4),
+    0 8px 24px rgba(46, 66, 255, 0.2);
+  transform: translateY(-3px);
+}
+
+.button1:active {
+  transform: scale(0.97);
+  filter: brightness(0.85);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(135deg, #2e42ff, #5c6bff);
+}
+
+.button1:focus {
+  outline: none;
+  border-color: #7289da;
+  box-shadow: 0 0 0 4px rgba(46, 66, 255, 0.3);
+}

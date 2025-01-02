@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx", // Enables JSX syntax for React (use "react" if React version <17)
+    "baseUrl": ".", // Sets the base URL for module resolution
+    "paths": {
+      "@/*": ["./src/*"] // Maps imports starting with "@/" to the "./src/" directory
+    },
+    "moduleResolution": "node", // Ensures proper module resolution
+    "esModuleInterop": true, // Allows default imports from CommonJS modules
+    "strict": true, // Enables strict type checking
+    "skipLibCheck": true // Skips type checking for library files
+  }
+}
