@@ -51,7 +51,7 @@ const Teams = () => {
     },
     {
       id: 7,
-      name: "Priyanshu chouhan",
+      name: "Priyanshu Chouhan",
       role: "Public Relation Officer",
       image: priyanshuImg,
     },

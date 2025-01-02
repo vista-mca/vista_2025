@@ -1,13 +1,12 @@
 import { Route, Routes } from "react-router-dom";
-import Home from "./Pages/Home";
-import AnimatedCursor from "react-animated-cursor";
 import Auth from "./admin/Auth";
 import AdminPage from "./admin/AdminPage";
-import Team from "./Pages/Team";
-import EventDetails from "./Pages/EventDeails";
-import TechnicalEvent from "./Pages/Events/TechnicalEvent";
-import SportEvent from "./Pages/Events/SportEvent";
-import CulturalEvent from "./Pages/Events/CulturalEvent";
+import Team from "./pages/Team";
+import Home from "./pages/Home";
+import EventDetails from "./pages/EventDeails";
+import TechnicalEvent from "./pages/Events/TechnicalEvent";
+import SportEvent from "./pages/Events/SportEvent";
+import CulturalEvent from "./pages/Events/CulturalEvent";
 
 function App() {
   return (
