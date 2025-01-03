@@ -3,11 +3,11 @@ import Countdown from "../components/HomeComponents/Countdown";
 import Stats from "../components/HomeComponents/Stats";
 import AboutUs from "@/components/HomeComponents/AboutUs";
 import AboutCollege from "@/components/HomeComponents/AboutCollege";
-import ParticipateColleges from "@/components/HomeComponents/ParticipateColleges";
+// import ParticipateColleges from "@/components/HomeComponents/ParticipateColleges";
 import Events from "@/components/HomeComponents/Events";
 import Teams from "@/components/HomeComponents/Teams";
-import GuestOfHonour from "@/components/HomeComponents/GuestOfHonour";
-import Sponsors from "@/components/HomeComponents/Sponsors";
+// import GuestOfHonour from "@/components/HomeComponents/GuestOfHonour";
+// import Sponsors from "@/components/HomeComponents/Sponsors";
 import ContactUs from "@/components/HomeComponents/ContactUs";
 import LocationSection from "@/components/HomeComponents/LocationSection";
 import FAQ from "@/components/HomeComponents/FAQ";
@@ -46,10 +46,10 @@ const Home = () => {
         <Stats />
         <AboutUs />
         <AboutCollege />
-        <ParticipateColleges />
+        {/*<ParticipateColleges />*/}
         <Events />
-        <Sponsors />
-        <GuestOfHonour />
+        {/*<Sponsors />*/}
+        {/*<GuestOfHonour />*/}
         <Teams />
         <FAQ />
         <ContactUs />

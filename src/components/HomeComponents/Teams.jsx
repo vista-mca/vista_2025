@@ -189,7 +189,7 @@ const Teams = () => {
                     <div className="absolute inset-0 bg-purple-500/20 rounded-full blur-xl scale-150 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   </div>
                   <motion.h3
-                    className="text-sm font-medium text-white mb-1 relative z-10"
+                    className="text-sm text-center font-medium text-white mb-1 relative z-10"
                     whileHover={{ scale: 1.05 }}
                   >
                     {member.name}
