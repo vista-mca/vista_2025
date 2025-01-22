@@ -32,9 +32,9 @@ const Navbar = forwardRef((props, _ref) => {
           isVisible ? "transform-none" : "-translate-y-full"
         }`}
       >
-        <div className="z-10 animate px-10">
+        <div className="z-10 animate px-5 md:px-10">
           <a href="/">
-          <img src={logo} alt="" className="w-20 h-full" />
+          <img src={logo} alt="" className="w-12 md:w-20 h-full" />
           </a>
         </div>
 
