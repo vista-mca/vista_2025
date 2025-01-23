@@ -100,7 +100,7 @@ const Teams = () => {
     {
       id: 10,
       name: "Omkar Prajapati",
-      role: "Developer",
+      role: "Web Developer",
       image: omkarImg,
     },
   ];
