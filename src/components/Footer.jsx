@@ -34,19 +34,10 @@ const Footer = () => {
           </span>
         </h3>
       </div>
-      <div className="flex gap-4 justify-center items-center text-white">
-        <div>
-          <a href="https://github.com/omkar-devx" target="_blank">
-            <FaGithub style={{ width: "1.6rem", height: "1.6rem" }} />
-          </a>
-        </div>
-        <div>
-          <a href="https://www.linkedin.com/in/omkardevx/" target="_blank">
-            <FaLinkedin
-              style={{ color: "#0a66c3", width: "2rem", height: "2rem" }}
-            />
-          </a>
-        </div>
+      {/* <hr className="mx-32 m-auto" /> */}
+
+      <div className="flex pt-4 justify-center text-white">
+        Copyright © 2025 Vista. All Rights Reserved.
       </div>
     </div>
   );
