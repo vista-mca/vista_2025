@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import "../../css/button1.css";
 import premImg from "../../assets/team/prem.jpg";
@@ -10,9 +9,10 @@ import faizanImg from "../../assets/team/faizan.jpg";
 import sujataImg from "../../assets/team/sujata.jpg";
 import aliImg from "../../assets/team/ali.jpg";
 import adnanImg from "../../assets/team/adnan.jpg";
-import priyanshuImg from "../../assets/team/priyanshu.png";
+import priyanshuImg from "../../assets/team/priyanshu.jpg";
 import alishaImg from "../../assets/team/alisha.jpg";
 import sakshiImg from "../../assets/team/sakshi.jpg";
+import omkarImg from "../../assets/team/omkar.jpg";
 import { Card, CardContent } from "../ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 const Teams = () => {
@@ -100,8 +100,8 @@ const Teams = () => {
     {
       id: 10,
       name: "Omkar Prajapati",
-      role: "Website",
-      image: "/placeholder.svg?height=100&width=100",
+      role: "Developer",
+      image: omkarImg,
     },
   ];
   return (
@@ -110,8 +110,7 @@ const Teams = () => {
         <h1 className="text-[#007bff] text-center font-bold text-5xl my-[2rem]">
           Our Team 🙋🏻
         </h1>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4">
-        </div>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4"></div>
         <div className="flex flex-wrap my-8 justify-center gap-6">
           {coreMembers.map((member) => (
             <motion.div

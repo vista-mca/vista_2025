@@ -54,8 +54,9 @@ const Home = () => {
         <FAQ />
         <ContactUs />
         <LocationSection />
-        <Footer />
+        <hr className="mx-32 m-auto" />
         <ScrollToTop />
+        <Footer />
       </div>
     </>
   );

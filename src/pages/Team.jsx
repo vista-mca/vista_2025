@@ -10,11 +10,11 @@ import faizanImg from "../assets/team/faizan.jpg";
 import sujataImg from "../assets/team/sujata.jpg";
 import aliImg from "../assets/team/ali.jpg";
 import adnanImg from "../assets/team/adnan.jpg";
-import priyanshuImg from "../assets/team/priyanshu.png";
+import priyanshuImg from "../assets/team/priyanshu.jpg";
 import alishaImg from "../assets/team/alisha.jpg";
 import sakshiImg from "../assets/team/sakshi.jpg";
+import omkarImg from "../assets/team/omkar.jpg";
 import TeamCard from "@/components/TeamCard";
-
 
 const coreMembers = [
   {
@@ -22,33 +22,32 @@ const coreMembers = [
     name: "Prem Sahu",
     role: "President",
     image: premImg,
-    linkedin:"https://www.linkedin.com/in/premsahudeveloper/",
-    instagram:"https://www.instagram.com/premsxhu/"
-
+    linkedin: "https://www.linkedin.com/in/premsahudeveloper/",
+    instagram: "https://www.instagram.com/premsxhu/",
   },
   {
     id: 2,
     name: "Shruti Prajapati",
     role: "Vice President",
     image: shurtiImg,
-    linkedin:"https://www.linkedin.com/in/shrutii-prajapatii-499a75314/",
-    instagram:"https://www.instagram.com/__shruutzz__/"
+    linkedin: "https://www.linkedin.com/in/shrutii-prajapatii-499a75314/",
+    instagram: "https://www.instagram.com/__shruutzz__/",
   },
   {
     id: 4,
     name: "Aditya Patil",
     role: "Event Co-ordinator",
     image: adityaImg,
-    linkedin:"",
-    instagram:"https://www.instagram.com/8unnyyy.who/"
+    linkedin: "",
+    instagram: "https://www.instagram.com/8unnyyy.who/",
   },
   {
     id: 3,
     name: "Vijeta Yadav",
     role: "Event Co-ordinator",
     image: vijetaImg,
-    linkedin:"https://www.linkedin.com/in/vijeta-yadav-980028330/",
-    instagram:"https://www.instagram.com/whoisvijeta_._/"
+    linkedin: "https://www.linkedin.com/in/vijeta-yadav-980028330/",
+    instagram: "https://www.instagram.com/whoisvijeta_._/",
   },
 ];
 const teamMembers = [
@@ -57,80 +56,80 @@ const teamMembers = [
     name: "Alpesh Saxena",
     role: "Public Relation Officer",
     image: alpeshImg,
-    linkedin:"",
-    instagram:""
+    linkedin: "",
+    instagram: "",
   },
   {
     id: 7,
     name: "Priyanshu Chouhan",
     role: "Public Relation Officer",
     image: priyanshuImg,
-    linkedin:"",
-    instagram:""
+    linkedin: "",
+    instagram: "",
   },
   {
     id: 2,
     name: "Faizan Talikot",
     role: "General Secretary",
     image: faizanImg,
-    linkedin:"",
-    instagram:""
+    linkedin: "",
+    instagram: "",
   },
   {
     id: 3,
     name: "Sujata Prasad",
     role: "Technical Head",
     image: sujataImg,
-    linkedin:"",
-    instagram:""
+    linkedin: "",
+    instagram: "",
   },
   {
     id: 4,
     name: "Ali Shaikh",
     role: "Cultural Head",
     image: aliImg,
-    linkedin:"",
-    instagram:""
+    linkedin: "",
+    instagram: "",
   },
   {
     id: 5,
     name: "Adnan Shaikh",
     role: "Sport Head",
     image: adnanImg,
-    linkedin:"",
-    instagram:""
+    linkedin: "",
+    instagram: "",
   },
   {
     id: 8,
     name: "Alisha Malik",
     role: "Sponsor Head",
     image: alishaImg,
-    linkedin:"",
-    instagram:""
+    linkedin: "",
+    instagram: "",
   },
   {
     id: 6,
     name: "Aditya Patil",
     role: "Digital Head",
     image: adityaImg,
-    linkedin:"",
-    instagram:""
+    linkedin: "",
+    instagram: "",
   },
   {
     id: 9,
     name: "Sakshi Singh",
     role: "Creative Head",
     image: sakshiImg,
-    linkedin:"",
-    instagram:""
+    linkedin: "",
+    instagram: "",
   },
   {
     id: 10,
     name: "Omkar Prajapati",
-    role: "Website",
-    image: "/placeholder.svg?height=100&width=100",
-    linkedin:"",
-    instagram:""
+    role: "Developer",
+    image: omkarImg,
+    linkedin: "",
+    instagram: "",
   },
 ];
 
@@ -148,15 +147,17 @@ export default function Team() {
 
         <div className="px-4 md:px-6">
           <div className="flex flex-wrap my-8 justify-center gap-6">
-            {coreMembers.map(({id, name, role, linkedin, instagram, image})=>
-            <TeamCard
-            key={id}
-              img={image}
-              name={name}
-              position={role}
-              linkedin={linkedin}
-              instagram={instagram}
-            />
+            {coreMembers.map(
+              ({ id, name, role, linkedin, instagram, image }) => (
+                <TeamCard
+                  key={id}
+                  img={image}
+                  name={name}
+                  position={role}
+                  linkedin={linkedin}
+                  instagram={instagram}
+                />
+              )
             )}
             {/* <TeamCard
               img={shurtiImg}
@@ -183,16 +184,18 @@ export default function Team() {
             /> */}
           </div>
           <div className="flex flex-wrap my-8 justify-center gap-6">
-            {teamMembers.map(({id, name, role, linkedin, instagram, image}) => (
-              <TeamCard
-              key={id}
-                img={image}
-                name={name}
-                position={role}
-                linkedin={linkedin}
-                instagram={instagram}
-              />
-            ))}
+            {teamMembers.map(
+              ({ id, name, role, linkedin, instagram, image }) => (
+                <TeamCard
+                  key={id}
+                  img={image}
+                  name={name}
+                  position={role}
+                  linkedin={linkedin}
+                  instagram={instagram}
+                />
+              )
+            )}
           </div>
         </div>
       </section>

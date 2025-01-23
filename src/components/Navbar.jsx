@@ -28,13 +28,13 @@ const Navbar = forwardRef((props, _ref) => {
   return (
     <div>
       <nav
-        className={` text-xl text-white fixed font-bold z-40 w-full  py-5 flex justify-around items-center backdrop-blur-[8px] backdrop-saturate-[1.72] md:bg-[rgba(17,25,40,0.2)] transition-transform duration-300 ${
+        className={` text-xl text-white fixed font-bold z-40 w-full  h-[4rem] flex justify-around items-center backdrop-blur-[8px] backdrop-saturate-[1.72] md:bg-[rgba(17,25,40,0.2)] transition-transform duration-300 ${
           isVisible ? "transform-none" : "-translate-y-full"
         }`}
       >
         <div className="z-10 animate px-5 md:px-10">
           <a href="/">
-          <img src={logo} alt="" className="w-12 md:w-20 h-full" />
+          <img src={logo} alt="" className="w-12 md:w-12 h-full" />
           </a>
         </div>
 
