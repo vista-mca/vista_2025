@@ -28,10 +28,6 @@ const Footer = () => {
         </h3>
       </div>
       {/* <hr className="mx-32 m-auto" /> */}
-
-      <div className="flex pt-4 justify-center text-white">
-        Copyright © 2025 Vista. All Rights Reserved.
-      </div>
     </div>
   );
 };
