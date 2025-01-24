@@ -125,9 +125,9 @@ const teamMembers = [
   },
   {
     id: 10,
-    name: "Omkar Prajapati",
+    name: "Priyanshu Chouhan",
     role: "Web Developer",
-    image: omkarImg,
+    image: priyanshuImg,
     linkedin: "",
     instagram: "",
   },
