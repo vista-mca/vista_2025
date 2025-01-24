@@ -17,6 +17,8 @@ import Lenis from "@studio-freight/lenis";
 import Navbar from "@/components/Navbar";
 import ScrollToTop from "@/components/ScrollToTop";
 import Hero from "@/components/HomeComponents/Hero";
+import OurSponsors from "@/components/HomeComponents/OurSponsors";
+
 
 const Home = () => {
   useEffect(() => {
@@ -48,7 +50,7 @@ const Home = () => {
         <AboutCollege />
         {/*<ParticipateColleges />*/}
         <Events />
-        {/*<Sponsors />*/}
+        <OurSponsors />
         {/*<GuestOfHonour />*/}
         <Teams />
         <FAQ />

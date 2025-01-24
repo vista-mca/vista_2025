@@ -1,5 +1,3 @@
-import { FaExternalLinkSquareAlt, FaLinkedin, FaGithub } from "react-icons/fa";
-import { LiaExternalLinkAltSolid } from "react-icons/lia";
 
 const Footer = () => {
   return (
@@ -23,14 +21,9 @@ const Footer = () => {
               </svg>
             </button>
           </span>
-          by{" "}
-          <span className="flex gap-0 items-center font-bold text-lg underline cursor-pointer text-[#007bff]">
-            <a href="https://www.linkedin.com/in/omkardevx/" target="_blank">
-              Omkar Prajapati
-            </a>
-            <LiaExternalLinkAltSolid
-              style={{ width: "1.4rem", height: "1.4rem" }}
-            />
+          by{" "} Team 
+          <span className="-mx-1 flex gap-0 items-center font-semibold italic text-lg cursor-pointer text-[#007bff]">
+          Vista
           </span>
         </h3>
       </div>
