@@ -99,9 +99,9 @@ const Teams = () => {
     },
     {
       id: 10,
-      name: "Priyanshu Chouhan",
+      name: "Omkar Prajapati",
       role: "Web Developer",
-      image: priyanshuImg,
+      image: omkarImg,
     },
   ];
   return (
