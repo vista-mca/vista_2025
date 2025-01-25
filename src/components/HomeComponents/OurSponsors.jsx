@@ -90,8 +90,8 @@ function OurSponsors() {
                 {/* <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-white dark:from-background"></div>
                 <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-white dark:from-background"></div> */}
             </div>
-            <div className="md:hidden relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl">
-                <Marquee pauseOnHover className="[--duration:20s]">
+            <div className="md:hidden relative flex h-44 w-full flex-row items-center justify-center overflow-hidden rounded-lg md:shadow-xl gap-12 px-5">
+                {/* <Marquee vertical pauseOnHover className="[--duration:20s]">
                     {OurSponsorsLst.map((data, idx) => (
                         <img
                             key={idx}
@@ -101,7 +101,7 @@ function OurSponsors() {
                         />
                     ))}
                 </Marquee>
-                <Marquee reverse pauseOnHover className="[--duration:20s]">
+                <Marquee vertical reverse pauseOnHover className="[--duration:20s]">
                     {OurSponsorsLst.map((data, idx) => (
                         <img
                             key={idx}
@@ -110,9 +110,46 @@ function OurSponsors() {
                             className="mx-auto h-full w-full cursor-pointer rounded-xl border border-neutral-300 transition-all duration-300 hover:ring-1 hover:ring-neutral-300"
                         />
                     ))}
-                </Marquee>
-                <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-white dark:from-background"></div>
-                <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-white dark:from-background"></div>
+                </Marquee> */}
+                 <Marquee
+                        className="w-1/3 justify-center overflow-hidden [--duration:60s] [--gap:1rem]"
+                        vertical
+                        reverse
+                        style={{
+                            transform:
+                                "translateX(0px) translateY(0px) translateZ(-50px) rotateX(0deg) rotateY(-20deg) rotateZ(10deg) scale(1.5)",
+                        }}
+                    >
+                        {OurSponsorsLst.map((data, idx) => (
+                            <img
+                                key={idx}
+                                src={data.img}
+                                alt={data.name}
+                                className="mx-auto aspect-square h-full w-full cursor-pointer rounded-xl border border-neutral-300 transition-all duration-300 hover:ring-1 hover:ring-neutral-300"
+                            />
+                        ))}
+                    </Marquee>
+                    <Marquee
+                        className="w-1/3 justify-center overflow-hidden [--duration:60s] [--gap:1rem]"
+                        vertical
+                        style={{
+                            transform:
+                                "translateX(0px) translateY(0px) translateZ(-50px) rotateX(0deg) rotateY(-20deg) rotateZ(10deg) scale(1.5)",
+                        }}
+                    >
+                        {OurSponsorsLst.map((data, idx) => (
+                            <img
+                                key={idx}
+                                src={data.img}
+                                alt={data.name}
+                                width={400}
+                                height={600}
+                                className="mx-auto aspect-square h-full w-full cursor-pointer rounded-xl border border-neutral-300 transition-all duration-300 hover:ring-1 hover:ring-neutral-300"
+                            />
+                        ))}
+                    </Marquee>
+                {/* <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-white dark:from-background"></div>
+                <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-white dark:from-background"></div> */}
             </div>
         </div>
     )
