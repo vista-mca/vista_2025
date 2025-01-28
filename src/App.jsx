@@ -7,6 +7,7 @@ import EventDetails from "./pages/EventDeails";
 import TechnicalEvent from "./pages/Events/TechnicalEvent";
 import SportEvent from "./pages/Events/SportEvent";
 import CulturalEvent from "./pages/Events/CulturalEvent";
+import ESports from "./pages/Events/ESports";
 
 function App() {
   return (
@@ -42,16 +43,16 @@ function App() {
       </div> */}
 
       <Routes>
-        {/* <Route path="/" element={<Home />} /> */}
         <Route path="/">
           <Route index element={<Home />} />
           <Route path="/adminauth" element={<Auth />} />
           <Route path="/adminpage" element={<AdminPage />} />
           <Route path="/teams" element={<Team />} />
-          <Route path="/event" element={<EventDetails />} />
+          <Route path="/eventDetails-temp" element={<EventDetails />} />
           <Route path="/events/technicals" element={<TechnicalEvent />} />
           <Route path="/events/sports" element={<SportEvent />} />
           <Route path="/events/culturals" element={<CulturalEvent />} />
+          <Route path="/events/esports" element={<ESports />} />
         </Route>
       </Routes>
     </>

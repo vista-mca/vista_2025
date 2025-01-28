@@ -2,7 +2,7 @@
 const EventCard = ({ eventName, img, text, link }) => {
   return (
     <div className="group relative rounded-lg my-1 w-auto md:w-[15rem] h-full transform transition-all duration-500 hover:scale-105 hover:rotate-3 hover:shadow-xl hover:shadow-slate-500/50">
-      <div className="relative overflow-hidden rounded-lg bg-[#2a2a2a] h-full shadow-sm border border-slate-700 transform transition-all duration-300 hover:scale-[0.98] hover:shadow-[0_0_30px_1px_rgba(0,255,117,0.3)]">
+      <div className="relative flex flex-col justify-around overflow-hidden rounded-lg bg-[#2a2a2a] h-full shadow-sm border border-slate-700 transform transition-all duration-300 hover:scale-[0.98] hover:shadow-[0_0_30px_1px_rgba(0,255,117,0.3)]">
         <div className="m-2.5 overflow-hidden rounded-md h-40 md:h-[13.5rem] flex justify-center items-center">
           <img
             className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 ease-in-out"

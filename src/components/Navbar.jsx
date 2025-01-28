@@ -60,7 +60,7 @@ const Navbar = forwardRef((props, _ref) => {
               href="#teams-section"
               onClick={(e) => handleSmoothScroll(e, "teams-section", 80)}
             >
-              Teams
+              Team
             </a>
           </li>
           <li className="animate menu-item hover:cursor-pointer hover:text-[#007bff]">

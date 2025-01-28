@@ -24,7 +24,6 @@ const Events = () => {
           text={ITtext}
           link={"/events/technicals"}
         />
-      
         <EventCard
           eventName={"Cultural Events"}
           img={img3}
@@ -41,7 +40,7 @@ const Events = () => {
           eventName={"E-Sports Events"}
           img={img4}
           text={CuturalText}
-          link={"/events/culturals"}
+          link={"/events/esports"}
         />
       </div>
     </div>
