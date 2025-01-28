@@ -7,35 +7,57 @@ import { motion } from "framer-motion";
 const events = [
   {
     id: 1,
-    title: "CODEUNVEIL (IT)",
-    time: "8:00AM - 9:15AM",
+    title: "QalaInnovate - (Hackathon)",
+    date: "22 Feb 2025 (Day 1)",
+    time: "9:00AM - 5:00PM",
     description:
-      "Embark on a journey of knowledge and discovery with our IT Quiz, where curiosity meets technology at the IT Tech Fest event.",
+      "At QalaInnovate, team up to build creative, real-world solutions in an intense and innovative coding marathon.",
     type: "IT",
   },
   {
     id: 2,
-    title: "CARROM(Duo) (NON-IT)",
-    time: "8:00AM - 9:50AM",
+    title: "FrameFusion (Short Film Making)",
+    date: "22 Feb 2025 (Day 1)",
+    time: "9:00AM - 5:00PM",
     description:
-      "Strike for victory in electrifying carrom battles. Join us at the IT Event TECHBIT 4.0 for exciting matches and become the carrom champion",
-    type: "NON-IT",
+      "In FrameFusion, let your creativity shine by crafting compelling short films that inspire, entertain, and tell powerful stories.",
+    type: "IT",
   },
   {
     id: 3,
-    title: "CODECLASH (IT)",
-    time: "9:30AM - 10:30AM",
+    title: "CodeCraft Battle (Programming)",
+    date: "22 Feb 2025 (Day 1)",
+    time: "10:00AM - 1:00PM",
     description:
-      "Engage in epic coding duels at CodeWar, where programmers clash in strategic challenges. Join us at the IT Event TECHBIT 4.0 to test your skills and dominate the code arena!",
+      "CodeCraft Battle challenges you to solve complex programming problems against the clock while competing with top coders.",
     type: "IT",
   },
   {
     id: 4,
-    title: "CHESS (NON-IT)",
-    time: "10:00AM - 11:50AM",
+    title: "QalaKriti (UI Designing)",
+    date: "23 Feb 2025 (Day 2)",
+    time: "9:00AM - 5:00AM",
     description:
-      "Strategize, attack, triumph. Immerse yourself in riveting chess battles at the IT Event TECHBIT 4.0, where minds clash and only the savviest prevail",
-    type: "NON-IT",
+      "QalaKriti invites you to design visually stunning and user-friendly interfaces that leave a lasting impression.",
+    type: "IT",
+  },
+  {
+    id: 5,
+    title: "Art Of Debug (Debugging)",
+    date: "23 Feb 2025 (Day 2)",
+    time: "10:00AM - 1:00PM",
+    description:
+      "Art of Debug tests your problem-solving prowess as you hunt and fix tricky bugs in this exciting debugging challenge.",
+    type: "IT",
+  },
+  {
+    id: 6,
+    title: "QalaMind Quest (Aptitude Test)",
+    date: "23 Feb 2025 (Day 1)",
+    time: "1:00AM - 5:00PM",
+    description:
+      "QalaMind Quest pushes your logic and reasoning skills with puzzles and challenges designed to test your analytical abilities.",
+    type: "IT",
   },
 ];
 
@@ -124,6 +146,9 @@ export default function TechnicalEvent() {
                     >
                       {event.title}
                     </motion.h3>
+                    <p className="text-[#FF7EE2] font-medium mb-2 relative z-10">
+                      Date: {event.date}
+                    </p>
                     <p className="text-yellow-400 font-medium mb-2 relative z-10">
                       Time: {event.time}
                     </p>

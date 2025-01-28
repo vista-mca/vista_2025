@@ -4,40 +4,7 @@ import AnimatedBanner from "@/components/AnimatedBanner";
 import Navbar from "@/components/Navbar";
 import { motion } from "framer-motion";
 
-const events = [
-  {
-    id: 1,
-    title: "CODEUNVEIL (IT)",
-    time: "8:00AM - 9:15AM",
-    description:
-      "Embark on a journey of knowledge and discovery with our IT Quiz, where curiosity meets technology at the IT Tech Fest event.",
-    type: "IT",
-  },
-  {
-    id: 2,
-    title: "CARROM(Duo) (NON-IT)",
-    time: "8:00AM - 9:50AM",
-    description:
-      "Strike for victory in electrifying carrom battles. Join us at the IT Event TECHBIT 4.0 for exciting matches and become the carrom champion",
-    type: "NON-IT",
-  },
-  {
-    id: 3,
-    title: "CODECLASH (IT)",
-    time: "9:30AM - 10:30AM",
-    description:
-      "Engage in epic coding duels at CodeWar, where programmers clash in strategic challenges. Join us at the IT Event TECHBIT 4.0 to test your skills and dominate the code arena!",
-    type: "IT",
-  },
-  {
-    id: 4,
-    title: "CHESS (NON-IT)",
-    time: "10:00AM - 11:50AM",
-    description:
-      "Strategize, attack, triumph. Immerse yourself in riveting chess battles at the IT Event TECHBIT 4.0, where minds clash and only the savviest prevail",
-    type: "NON-IT",
-  },
-];
+const events = [];
 
 export default function SportEvent() {
   return (

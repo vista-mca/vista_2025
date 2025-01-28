@@ -56,7 +56,6 @@ const Home = () => {
         <FAQ />
         <ContactUs />
         <LocationSection />
-        
         <ScrollToTop />
         <Footer />
       </div>

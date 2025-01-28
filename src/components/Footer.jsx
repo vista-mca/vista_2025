@@ -1,4 +1,3 @@
-
 const Footer = () => {
   return (
     <div className="my-3">
@@ -21,13 +20,12 @@ const Footer = () => {
               </svg>
             </button>
           </span>
-          by{" "} Team 
+          by Team
           <span className="-mx-1 flex gap-0 items-center font-semibold italic text-lg cursor-pointer text-[#007bff]">
-          Vista
+            Vista
           </span>
         </h3>
       </div>
-      {/* <hr className="mx-32 m-auto" /> */}
     </div>
   );
 };

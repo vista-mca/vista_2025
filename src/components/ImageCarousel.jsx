@@ -21,7 +21,7 @@ const AboutUs = ({ images }) => {
   }, [images.length]);
 
   return (
-    <div className="flex m-auto md:m-0 w-[20rem] md:w-[30rem] overflow-hidden rounded-lg shadow-lg">
+    <div className="flex m-auto md:m-0 h-fit w-[20rem] md:w-[30rem] overflow-hidden rounded-lg shadow-lg">
       <div
         className="flex transition-transform duration-500  ease-in-out"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}

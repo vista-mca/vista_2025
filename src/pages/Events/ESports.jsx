@@ -7,94 +7,31 @@ import { motion } from "framer-motion";
 const events = [
   {
     id: 1,
-    title: "PR Parade",
+    title: "BGMI",
     date: "22 Feb 2025 (Day 1)",
-    time: "9:00AM - 10:30AM",
+    time: "9:00AM - 5:00PM",
     description:
-      "Embark on a journey of knowledge and discovery with our IT Quiz, where curiosity meets technology at the IT Tech Fest event.",
+      "At QalaInnovate, team up to build creative, real-world solutions in an intense and innovative coding marathon.",
     type: "IT",
   },
   {
     id: 2,
-    title: "Singing",
+    title: "Velorant",
     date: "22 Feb 2025 (Day 1)",
-    time: "11:00AM - 1:00PM",
+    time: "9:00AM - 5:00PM",
     description:
-      "Strike for victory in electrifying carrom battles. Join us at the IT Event TECHBIT 4.0 for exciting matches and become the carrom champion",
-    type: "NON-IT",
-  },
-  {
-    id: 3,
-    date: "22 Feb 2025 (Day 1)",
-    title: "Rap ( Elimination )",
-    time: "9:30AM - 10:30AM",
-    description:
-      "Engage in epic coding duels at CodeWar, where programmers clash in strategic challenges. Join us at the IT Event TECHBIT 4.0 to test your skills and dominate the code arena!",
+      "In FrameFusion, let your creativity shine by crafting compelling short films that inspire, entertain, and tell powerful stories.",
     type: "IT",
-  },
-  {
-    id: 4,
-    date: "22 Feb 2025 (Day 1)",
-    title: "The Latent Show",
-    time: "4:00AM - 6:00PM",
-    description:
-      "Strategize, attack, triumph. Immerse yourself in riveting chess battles at the IT Event TECHBIT 4.0, where minds clash and only the savviest prevail",
-    type: "NON-IT",
-  },
-  {
-    id: 5,
-    title: "Solo Dance",
-    date: "23 Feb 2025 (Day 2)",
-    time: "9:00AM - 11:00AM",
-    description:
-      "Strategize, attack, triumph. Immerse yourself in riveting chess battles at the IT Event TECHBIT 4.0, where minds clash and only the savviest prevail",
-    type: "NON-IT",
-  },
-  {
-    id: 6,
-    title: "Rap ( Finals )",
-    date: "23 Feb 2025 (Day 2)",
-    time: "11:00AM - 12:00PM",
-    description:
-      "Strategize, attack, triumph. Immerse yourself in riveting chess battles at the IT Event TECHBIT 4.0, where minds clash and only the savviest prevail",
-    type: "NON-IT",
-  },
-  {
-    id: 7,
-    title: "Group Dance",
-    date: "23 Feb 2025 (Day 2)",
-    time: "12:00PM - 2:00PM",
-    description:
-      "Strategize, attack, triumph. Immerse yourself in riveting chess battles at the IT Event TECHBIT 4.0, where minds clash and only the savviest prevail",
-    type: "NON-IT",
-  },
-  {
-    id: 7,
-    title: "Fashion Show",
-    date: "23 Feb 2025 (Day 2)",
-    time: "2:00PM - 4:00PM",
-    description:
-      "Strategize, attack, triumph. Immerse yourself in riveting chess battles at the IT Event TECHBIT 4.0, where minds clash and only the savviest prevail",
-    type: "NON-IT",
-  },
-  {
-    id: 7,
-    title: "MR & MS Vista",
-    date: "23 Feb 2025 (Day 2)",
-    time: "4:00PM - 5:00PM",
-    description:
-      "Strategize, attack, triumph. Immerse yourself in riveting chess battles at the IT Event TECHBIT 4.0, where minds clash and only the savviest prevail",
-    type: "NON-IT",
   },
 ];
 
-export default function CulturalEvent() {
+export default function TechnicalEvent() {
   return (
     <div>
       <Navbar />
       <div className="w-full bg-[#2c60b9] h-[4.2rem]"></div>
       <AnimatedBanner
-        text="Cultural Events"
+        text="E-Sports Events"
         bgColor="bg-[#2c60b9]"
         textColor="text-white"
       />

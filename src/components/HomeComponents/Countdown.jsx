@@ -1,7 +1,6 @@
-
 import { useEffect, useState } from "react";
 
-const targetDate = new Date("2025-02-20T00:00:00");
+const targetDate = new Date("2025-02-21T00:00:00");
 const Countdown = () => {
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
@@ -34,7 +33,8 @@ const Countdown = () => {
   }, [targetDate]);
 
   return (
-    <div className="flex my-4 items-center justify-center bg-transparent  p-4">
+    <div className="flex my-4 flex-col items-center justify-center bg-transparent  p-4">
+      {/* <div className="pb-4 font-bold text-white text-4xl">Countdown</div> */}
       <div className="relative w-full max-w-xl">
         {/* Background Circles */}
         <div className="absolute bottom-0 right-0 w-16 h-16 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-24 lg:h-24 rounded-full bg-gradient-to-br from-[#ff5b84] to-[#eb3461]  opacity-50 z-0" />
