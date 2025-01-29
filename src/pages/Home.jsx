@@ -18,7 +18,7 @@ import Navbar from "@/components/Navbar";
 import ScrollToTop from "@/components/ScrollToTop";
 import Hero from "@/components/HomeComponents/Hero";
 import OurSponsors from "@/components/HomeComponents/OurSponsors";
-
+import Sponsors from "@/components/HomeComponents/Sponsors";
 
 const Home = () => {
   useEffect(() => {
@@ -51,6 +51,7 @@ const Home = () => {
         {/*<ParticipateColleges />*/}
         <Events />
         <OurSponsors />
+        <Sponsors />
         {/*<GuestOfHonour />*/}
         <Teams />
         <FAQ />

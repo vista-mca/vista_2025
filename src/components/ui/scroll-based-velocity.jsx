@@ -10,28 +10,28 @@ import {
   useVelocity,
 } from "framer-motion";
 
-// Utility function to wrap values
+// Improved wrap function for smooth transitions
 const wrap = (min, max, v) => {
   const rangeSize = max - min;
-  return ((((v - min) % rangeSize) + rangeSize) % rangeSize) + min;
+  const clampedValue = v < min ? max - (min - v) % rangeSize : v;
+  return ((clampedValue - min) % rangeSize + rangeSize) % rangeSize + min;
 };
 
-// Main VelocityScroll component
-export function VelocityScroll({ items, defaultVelocity = 5, className }) {
-  function ParallaxText({ children, baseVelocity = 10, className }) {
+export function VelocityScroll({ items, defaultVelocity = 2, className }) {
+  function ParallaxText({ children, baseVelocity = 3, className }) {
     const baseX = useMotionValue(0);
     const { scrollY } = useScroll();
     const scrollVelocity = useVelocity(scrollY);
     const smoothVelocity = useSpring(scrollVelocity, {
-      damping: 50,
-      stiffness: 400,
+      damping: 55,
+      stiffness: 300,
     });
 
-    const velocityFactor = useTransform(smoothVelocity, [0, 1000], [0, 5], {
+    const velocityFactor = useTransform(smoothVelocity, [0, 1000], [0, 4], {
       clamp: false,
     });
 
-    const [repetitions, setRepetitions] = useState(1);
+    const [repetitions, setRepetitions] = useState(3);
     const containerRef = useRef(null);
     const contentRef = useRef(null);
 
@@ -39,46 +39,45 @@ export function VelocityScroll({ items, defaultVelocity = 5, className }) {
       const calculateRepetitions = () => {
         if (containerRef.current && contentRef.current) {
           const containerWidth = containerRef.current.offsetWidth;
-          const contentWidth = contentRef.current.offsetWidth;
-          const newRepetitions = Math.ceil(containerWidth / contentWidth) + 2;
+          const contentWidth = contentRef.current.scrollWidth;
+          const newRepetitions = Math.max(
+            Math.ceil((containerWidth * 2) / contentWidth) + 1,
+            3
+          );
           setRepetitions(newRepetitions);
         }
       };
 
       calculateRepetitions();
-
-      window.addEventListener("resize", calculateRepetitions);
-      return () => window.removeEventListener("resize", calculateRepetitions);
+      const resizeObserver = new ResizeObserver(calculateRepetitions);
+      if (containerRef.current) resizeObserver.observe(containerRef.current);
+      return () => resizeObserver.disconnect();
     }, [children]);
 
-    const x = useTransform(baseX, (v) => `${wrap(-100 / repetitions, 0, v)}%`);
+    const x = useTransform(baseX, (v) => `${wrap(-100, 0, v)}%`);
 
     const directionFactor = useRef(1);
     useAnimationFrame((t, delta) => {
-      let moveBy = directionFactor.current * baseVelocity * (delta / 1000);
-
-      if (velocityFactor.get() < 0) {
-        directionFactor.current = -1;
-      } else if (velocityFactor.get() > 0) {
-        directionFactor.current = 1;
-      }
-
-      moveBy += directionFactor.current * moveBy * velocityFactor.get();
-
+      delta = Math.min(delta, 1000);
+      const adjustedDelta = delta / 1000;
+      
+      let moveBy = directionFactor.current * baseVelocity * adjustedDelta;
+      moveBy += moveBy * velocityFactor.get();
+      
       baseX.set(baseX.get() + moveBy);
     });
 
     return (
-      <div
-        className="w-full overflow-hidden whitespace-nowrap"
-        ref={containerRef}
-      >
-        <motion.div className={`inline-block ${className}`} style={{ x }}>
+      <div className="w-full overflow-hidden mb-8" ref={containerRef}>
+        <motion.div 
+          className={`flex whitespace-nowrap ${className}`}
+          style={{ x }}
+        >
           {Array.from({ length: repetitions }).map((_, i) => (
             <div
               key={i}
               ref={i === 0 ? contentRef : null}
-              className="inline-flex items-center mb-10 space-x-4"
+              className="flex-shrink-0 px-4"
             >
               {children}
             </div>
@@ -89,34 +88,35 @@ export function VelocityScroll({ items, defaultVelocity = 5, className }) {
   }
 
   return (
-    <section className="relative w-full">
+    <section className="relative w-full space-y-8">
       <ParallaxText baseVelocity={defaultVelocity} className={className}>
         {items.map((item, index) => (
           <div
             key={index}
-            className="inline-flex items-center px-[1.7rem] space-x-2 mr-8"
+            className="inline-flex items-center space-x-4 mx-4"
           >
             <img
               src={item.imageSrc}
               alt={item.text}
-              className="w-20 h-20 object-cover rounded-full"
+              className="w-24 h-24 object-cover rounded-full"
             />
-            <span className="text-white">{item.text}</span>
+            <span className="text-white text-xl">{item.text}</span>
           </div>
         ))}
       </ParallaxText>
+
       <ParallaxText baseVelocity={-defaultVelocity} className={className}>
         {items.map((item, index) => (
           <div
             key={index}
-            className="inline-flex px-[1.7rem] items-center space-x-2 mr-8"
+            className="inline-flex items-center space-x-4 mx-4"
           >
             <img
               src={item.imageSrc}
               alt={item.text}
-              className="w-20 h-20 object-cover rounded-full"
+              className="w-24 h-24 object-cover rounded-full"
             />
-            <span className="text-white">{item.text}</span>
+            <span className="text-white text-lg">{item.text}</span>
           </div>
         ))}
       </ParallaxText>
