@@ -15,7 +15,6 @@ import alishaImg from "../assets/team/alisha.jpg";
 import sakshiImg from "../assets/team/sakshi.jpg";
 import omkarImg from "../assets/team/omkar.jpg";
 import TeamCard from "@/components/TeamCard";
-
 const coreMembers = [
   {
     id: 1,
@@ -24,6 +23,8 @@ const coreMembers = [
     image: premImg,
     linkedin: "https://www.linkedin.com/in/premsahudeveloper/",
     instagram: "https://www.instagram.com/premsxhu/",
+    youtube: "",
+    website: "",
   },
   {
     id: 2,
@@ -32,22 +33,28 @@ const coreMembers = [
     image: shurtiImg,
     linkedin: "https://www.linkedin.com/in/shrutii-prajapatii-499a75314/",
     instagram: "https://www.instagram.com/__shruutzz__/",
+    youtube: "",
+    website: "",
   },
   {
-    id: 4,
+    id: 3,
     name: "Aditya Patil",
     role: "Event Co-ordinator",
     image: adityaImg,
     linkedin: "",
     instagram: "https://www.instagram.com/8unnyyy.who/",
+    youtube: "",
+    website: "",
   },
   {
-    id: 3,
+    id: 4,
     name: "Vijeta Yadav",
     role: "Event Co-ordinator",
     image: vijetaImg,
     linkedin: "https://www.linkedin.com/in/vijeta-yadav-980028330/",
     instagram: "https://www.instagram.com/whoisvijeta_._/",
+    youtube: "",
+    website: "",
   },
 ];
 const teamMembers = [
@@ -56,83 +63,92 @@ const teamMembers = [
     name: "Alpesh Saxena",
     role: "Public Relation Officer",
     image: alpeshImg,
-    linkedin: "",
     instagram: "",
+    linkedin: "https://www.linkedin.com/in/alpeshsaxena/",
+    youtube: "",
+    website: "https://www.anon.org.in/",
   },
   {
     id: 7,
     name: "Priyanshu Chouhan",
     role: "Public Relation Officer",
     image: priyanshuImg,
-    linkedin: "",
-    instagram: "",
+    instagram: "https://www.instagram.com/thepriynshuchouhn",
+    linkedin: "https://www.linkedin.com/in/priynshuchouhn/",
+    youtube: "",
+    website: "",
   },
   {
     id: 2,
     name: "Faizan Talikot",
     role: "General Secretary",
     image: faizanImg,
-    linkedin: "",
-    instagram: "",
+    instagram: "https://www.instagram.com/__faizzann__02",
+    linkedin: "https://www.linkedin.com/in/faizan-talikot/",
+    youtube: "",
+    website: "",
   },
   {
     id: 3,
     name: "Sujata Prasad",
     role: "Technical Head",
     image: sujataImg,
-    linkedin: "",
-    instagram: "",
+    instagram: "https://www.instagram.com/sujataprasad01",
+    linkedin: "https://www.linkedin.com/in/sujata-prasad/",
+    youtube: "",
+    website: "",
   },
   {
     id: 4,
     name: "Ali Shaikh",
     role: "Cultural Head",
     image: aliImg,
-    linkedin: "",
-    instagram: "",
+    instagram: "https://www.instagram.com/alishk_08",
+    linkedin: "https://www.linkedin.com/in/ali-shaikh-09ba6329b/",
+    youtube: "https://youtube.com/@alishk3750?si=4yMJ8CtB-H8ZRmQm",
+    website: "",
   },
   {
     id: 5,
     name: "Adnan Shaikh",
     role: "Sport Head",
     image: adnanImg,
-    linkedin: "",
-    instagram: "",
-  },
-  {
-    id: 8,
-    name: "Alisha Malik",
-    role: "Sponsor Head",
-    image: alishaImg,
-    linkedin: "",
-    instagram: "",
+    instagram: "https://www.instagram.com/adnannshaikh9",
+    linkedin: "https://www.linkedin.com/in/adnan-shaikh-289ab5234/",
+    youtube: "",
+    website: "",
   },
   {
     id: 6,
-    name: "Aditya Patil",
-    role: "Digital Head",
-    image: adityaImg,
-    linkedin: "",
-    instagram: "",
+    name: "Alisha Malik",
+    role: "Sponsor Head",
+    image: alishaImg,
+    instagram: "https://www.instagram.com/liisshhha/",
+    linkedin: "https://www.linkedin.com/in/alisha-malik-a3808a330",
+    youtube: "",
+    website: "",
   },
   {
-    id: 9,
+    id: 7,
     name: "Sakshi Singh",
     role: "Creative Head",
     image: sakshiImg,
-    linkedin: "",
-    instagram: "",
+    instagram: "https://www.instagram.com/sakshiisinghh_/",
+    linkedin: "https://www.linkedin.com/in/sakshi-singh-4b7964237",
+    youtube: "",
+    website: "",
   },
   {
-    id: 10,
+    id: 8,
     name: "Omkar Prajapati",
     role: "Web Developer",
     image: omkarImg,
-    linkedin: "",
-    instagram: "",
+    instagram: "https://www.instagram.com/omkar.devx/",
+    linkedin: "https://www.linkedin.com/in/omkardevx/",
+    youtube: "",
+    website: "https://commercewale.in/",
   },
 ];
-
 export default function Team() {
   return (
     <div>
@@ -148,7 +164,16 @@ export default function Team() {
         <div className="px-4 md:px-6">
           <div className="flex flex-wrap my-8 justify-center gap-6">
             {coreMembers.map(
-              ({ id, name, role, linkedin, instagram, image }) => (
+              ({
+                id,
+                name,
+                role,
+                linkedin,
+                instagram,
+                image,
+                website,
+                youtube,
+              }) => (
                 <TeamCard
                   key={id}
                   img={image}
@@ -156,36 +181,24 @@ export default function Team() {
                   position={role}
                   linkedin={linkedin}
                   instagram={instagram}
+                  website={website}
+                  youtube={youtube}
                 />
               )
             )}
-            {/* <TeamCard
-              img={shurtiImg}
-              name={"Shruti Prajapati"}
-              position={"Vice Chairperson"}
-              linkedin={
-                "https://www.linkedin.com/in/shrutii-prajapatii-499a75314/"
-              }
-              instagram={"https://www.instagram.com/__shruutzz__/"}
-            />
-            <TeamCard
-              img={vijetaImg}
-              name={" Vijeta Yadav"}
-              position={"Event Co-ordinator"}
-              linkedin={"https://www.linkedin.com/in/vijeta-yadav-980028330/"}
-              instagram={"https://www.instagram.com/whoisvijeta_._/"}
-            />
-            <TeamCard
-              img={adityaImg}
-              name={"Aditya Patil"}
-              position={"Event Co-ordinator"}
-              linkedin={"void"}
-              instagram={"https://www.instagram.com/8unnyyy.who/"}
-            /> */}
           </div>
           <div className="flex flex-wrap my-8 justify-center gap-6">
             {teamMembers.map(
-              ({ id, name, role, linkedin, instagram, image }) => (
+              ({
+                id,
+                name,
+                role,
+                linkedin,
+                instagram,
+                website,
+                youtube,
+                image,
+              }) => (
                 <TeamCard
                   key={id}
                   img={image}
@@ -193,6 +206,8 @@ export default function Team() {
                   position={role}
                   linkedin={linkedin}
                   instagram={instagram}
+                  website={website}
+                  youtube={youtube}
                 />
               )
             )}

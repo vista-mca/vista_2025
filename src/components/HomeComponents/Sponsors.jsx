@@ -1,42 +1,59 @@
 import { VelocityScroll } from "@/components/ui/scroll-based-velocity";
+import s1 from "../../assets/sponsors/s1.jpeg";
+import s2 from "../../assets/sponsors/s2.jpeg";
+import s3 from "../../assets/sponsors/s3.jpeg";
+import s4 from "../../assets/sponsors/s4.jpeg";
+import s6 from "../../assets/sponsors/s6.png";
+import s7 from "../../assets/sponsors/s7.png";
+
 const items = [
   {
-    text: "React",
-    imageSrc:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png",
+    text: "Rawstract",
+    imageSrc: s1,
   },
   {
-    text: "Vue",
-    imageSrc:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1200px-Vue.js_Logo_2.svg.png",
+    text: "Le Black",
+    imageSrc: s2,
   },
   {
-    text: "Angular",
-    imageSrc: "https://angular.io/assets/images/logos/angular/angular.svg",
+    text: "Spade Culture",
+    imageSrc: s3,
   },
   {
-    text: "Svelte",
-    imageSrc:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Svelte_Logo.svg/1200px-Svelte_Logo.svg.png",
+    text: "UnStop",
+    imageSrc: s4,
   },
   {
-    text: "React",
-    imageSrc:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png",
+    text: "FastUp",
+    imageSrc: s6,
   },
   {
-    text: "Vue",
-    imageSrc:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1200px-Vue.js_Logo_2.svg.png",
+    text: "Rabiya Kitchen",
+    imageSrc: s7,
   },
   {
-    text: "Angular",
-    imageSrc: "https://angular.io/assets/images/logos/angular/angular.svg",
+    text: "Rawstract",
+    imageSrc: s1,
   },
   {
-    text: "Svelte",
-    imageSrc:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Svelte_Logo.svg/1200px-Svelte_Logo.svg.png",
+    text: "Le Black",
+    imageSrc: s2,
+  },
+  {
+    text: "Spade Culture",
+    imageSrc: s3,
+  },
+  {
+    text: "UnStop",
+    imageSrc: s4,
+  },
+  {
+    text: "FastUp",
+    imageSrc: s6,
+  },
+  {
+    text: "Rabiya Kitchen",
+    imageSrc: s7,
   },
 ];
 
