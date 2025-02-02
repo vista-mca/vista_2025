@@ -13,6 +13,7 @@ import adnanImg from "../../assets/team/adnan.jpg";
 import priyanshuImg from "../../assets/team/priyanshu.jpg";
 import alishaImg from "../../assets/team/alisha.jpg";
 import sakshiImg from "../../assets/team/sakshi.jpg";
+import ayushImg from "../../assets/team/ayush.jpg";
 import omkarImg from "../../assets/team/omkar.jpg";
 import { useState } from "react";
 import { Card, CardContent } from "../ui/card";
@@ -105,12 +106,12 @@ const Teams = () => {
     },
     {
       id: 4,
-      name: "Ali Shaikh",
+      name: "Ayush Tiwari",
       role: "Cultural Head",
-      image: aliImg,
+      image: ayushImg,
       instagram: "https://www.instagram.com/alishk_08",
-      linkedin: "https://www.linkedin.com/in/ali-shaikh-09ba6329b/",
-      youtube: "https://youtube.com/@alishk3750?si=4yMJ8CtB-H8ZRmQm",
+      instagram: "https://www.instagram.com/hey.ayussh",
+      linkedin: "https://www.linkedin.com/in/ayush-tiwari-151866225",
       website: "",
     },
     {
