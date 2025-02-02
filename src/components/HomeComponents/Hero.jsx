@@ -8,7 +8,7 @@ const Hero = () => {
         muted
         loop
         playsInline
-        className="w-full md:h-[38rem] md:object-cover"
+        className="w-full md:h-screen  md:object-cover"
       >
         <source src={heroVideo} type="video/webm" />
         <p>
