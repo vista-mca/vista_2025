@@ -11,7 +11,7 @@ const Events = () => {
   const CuturalText =
     "Celebrate art, music, and traditions! Dive into vibrant cultural showcases that inspire creativity and unity.";
   return (
-    <div id="events-section" className="my-[5rem] flex flex-col items-center">
+    <div id="events-section" className="mb-[5rem] flex flex-col items-center">
       <div>
         <h2 className="text-[#007bff] my-[3rem] text-center font-bold text-5xl">
           Events 🚀

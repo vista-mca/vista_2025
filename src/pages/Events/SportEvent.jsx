@@ -4,7 +4,57 @@ import AnimatedBanner from "@/components/AnimatedBanner";
 import Navbar from "@/components/Navbar";
 import { motion } from "framer-motion";
 
-const events = [];
+const events = [
+  {
+    id: 1,
+    title: "Box Cricket",
+    date: "20 Feb 2025 (Day 1)",
+    time: "9:00AM - 5:00PM",
+    link: "events/technicals/qalainnovate",
+    description:
+      "At QalaInnovate, team up to build creative, real-world solutions in an intense and innovative coding marathon.",
+    type: "IT",
+  },
+  {
+    id: 2,
+    title: "Chess",
+    date: "20 Feb 2025 (Day 1)",
+    time: "10:00AM - 5:00PM",
+    link: "events/technicals/qalainnovate",
+    description:
+      "In FrameFusion, let your creativity shine by crafting compelling short films that inspire, entertain, and tell powerful stories.",
+    type: "IT",
+  },
+  {
+    id: 3,
+    title: "Carrom",
+    date: "20 Feb 2025 (Day 1)",
+    time: "10:00AM - 5:00PM",
+    link: "events/technicals/qalainnovate",
+    description:
+      "CodeCraft Battle challenges you to solve complex programming problems against the clock while competing with top coders.",
+    type: "IT",
+  },
+  {
+    id: 4,
+    title: "Table Tennis",
+    date: "20 Feb 2025 (Day 1)",
+    time: "10:00AM - 5:00PM",
+    description:
+      "QalaKriti invites you to design visually stunning and user-friendly interfaces that leave a lasting impression.",
+    type: "IT",
+  },
+  {
+    id: 5,
+    title: "Tug Of War",
+    date: "20 Feb 2025 (Day 1)",
+    time: "12:00PM - 5:00PM",
+    link: "events/technicals/qalainnovate",
+    description:
+      "Art of Debug tests your problem-solving prowess as you hunt and fix tricky bugs in this exciting debugging challenge.",
+    type: "IT",
+  },
+];
 
 export default function SportEvent() {
   return (
@@ -91,6 +141,9 @@ export default function SportEvent() {
                     >
                       {event.title}
                     </motion.h3>
+                    <p className="text-[#FF7EE2] font-medium mb-2 relative z-10">
+                      Date: {event.date}
+                    </p>
                     <p className="text-yellow-400 font-medium mb-2 relative z-10">
                       Time: {event.time}
                     </p>

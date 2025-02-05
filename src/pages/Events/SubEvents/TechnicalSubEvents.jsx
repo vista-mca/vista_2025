@@ -11,7 +11,7 @@ import {
 } from "lucide-react";
 import { useParams } from "react-router-dom";
 
-export default function EventDetails() {
+export default function TechnicalSubEvents() {
   const { eventName } = useParams();
   let data = {};
   if (eventName === "qalainnovate") {
@@ -20,6 +20,7 @@ export default function EventDetails() {
       summary: " 💻🚀 Code, innovate, and solve real-world problems. 💻🚀",
       description:
         "Step into the world of innovation and creativity with QalaInnovate! This high-energy hackathon is your chance to turn big ideas into reality. Collaborate, code, and craft solutions to real-world problems while competing against the brightest minds in tech.",
+      banner:"hackathon.jpg",  
       rules: [
         "Group participation of min 3 and max 5 members in each group.",
         "The participants have to bring their own system.",
@@ -44,6 +45,7 @@ export default function EventDetails() {
       summary: "🎬🎥 Create impactful films with creativity. 🎬🎥",
       description:
         "Unleash your storytelling power with FrameFusion! Whether it’s drama, comedy, or a thriller, this event challenges you to create impactful short films that inspire and entertain. Lights, camera, creativity!",
+      banner:"shortfilm.jpg",
       rules: [
         "The participants have to make a short video about Vista and its events of about 30-60 seconds.",
         "The content has to be original.",
@@ -62,6 +64,7 @@ export default function EventDetails() {
       summary: "⚔️👨‍💻 Solve coding challenges, compete, and win. ⚔️👨‍💻",
       description:
         "Test your logic, speed, and coding skills in the ultimate programming showdown! CodeCraft Battle is designed for competitive programmers who thrive on solving challenging problems under pressure. Are you ready to claim the champion’s spot?",
+      banner:"coding.jpg",
       rules: [
         "Solo participation will be allowed.",
         "There will be 3 rounds: 1st round will be elimination round. Participants clearing the 1st round will proceed to the 2nd round which is the qualifying round. Finally, the participants clearing the 2nd round will proceed to the final round.",
@@ -82,6 +85,7 @@ export default function EventDetails() {
       summary: "🎨🖥️ Design stunning, user-friendly digital interfaces. 🎨🖥️",
       description:
         "Transform ideas into visually stunning and user-friendly designs with QalaKriti! Show off your design skills as you craft interfaces that are not just functional but also a delight to experience. It's your canvas—let your imagination run wild!",
+      banner:"web.jpg",
       rules: [
         "Participants have to design a website having more than 1 webpage.",
         "Use of frameworks like Figma, React, Angular, jQuery are allowed.",
@@ -100,6 +104,7 @@ export default function EventDetails() {
       summary: "🐞🔍 Find and fix tricky bugs fast. 🐞🔍",
       description:
         "Embrace the challenge of hunting down elusive bugs and fixing them like a pro! Art of Debug is where your problem-solving skills meet your coding expertise. Can you crack the code and debug your way to victory?",
+      banner:"debug.jpg",
       rules: [
         "Solo participation will be allowed.",
         "There will be 2 rounds: 1st round will be elimination round. Finally, the participants clearing the 1st round will proceed to the final round.",
@@ -117,6 +122,7 @@ export default function EventDetails() {
       summary: "🧠🤔 Solve logical puzzles and test reasoning. 🧠🤔",
       description:
         "Push your mental boundaries and showcase your analytical prowess in QalaMind Quest! From logical puzzles to mathematical challenges, this aptitude test will determine who’s got the sharpest mind in the game.",
+      banner:"quiz.jpg",
       rules: [
         "The quiz will be on an online quiz platform.",
         "There will be 3 rounds.",
@@ -141,7 +147,7 @@ export default function EventDetails() {
         transition={{ duration: 1 }}
       >
         <div className="absolute inset-0 bg-[url('/placeholder.svg?height=500&width=1920')] bg-cover bg-center">
-          <div className="absolute inset-0 bg-gradient-to-r from-purple-900/90 via-blue-900/90 to-gray-950/90" />
+          <div style={{backgroundImage: `url('/banner/${data.banner}')` }} className="absolute inset-0 bg-cover bg-center  opacity-30" />
         </div>
 
         <div className="relative h-full container mx-auto px-4 flex flex-col items-center justify-center text-center">

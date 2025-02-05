@@ -3,13 +3,15 @@
 import AnimatedBanner from "@/components/AnimatedBanner";
 import Navbar from "@/components/Navbar";
 import { motion } from "framer-motion";
+import "../../css/button1.css";
 
 const events = [
   {
     id: 1,
     title: "QalaInnovate - (Hackathon)",
-    date: "22 Feb 2025 (Day 1)",
+    date: "20 Feb 2025 (Day 1)",
     time: "9:00AM - 5:00PM",
+    link: "technicals/qalainnovate",
     description:
       "At QalaInnovate, team up to build creative, real-world solutions in an intense and innovative coding marathon.",
     type: "IT",
@@ -17,17 +19,19 @@ const events = [
   {
     id: 2,
     title: "FrameFusion (Short Film Making)",
-    date: "22 Feb 2025 (Day 1)",
+    date: "20 Feb 2025 (Day 1)",
     time: "9:00AM - 5:00PM",
+    link: "technicals/framefusion",
     description:
       "In FrameFusion, let your creativity shine by crafting compelling short films that inspire, entertain, and tell powerful stories.",
     type: "IT",
   },
   {
     id: 3,
-    title: "CodeCraft Battle (Programming)",
-    date: "22 Feb 2025 (Day 1)",
+    title: "CodeCraft Battle (Competitive Programming)",
+    date: "20 Feb 2025 (Day 1)",
     time: "10:00AM - 1:00PM",
+    link: "technicals/codecraft",
     description:
       "CodeCraft Battle challenges you to solve complex programming problems against the clock while competing with top coders.",
     type: "IT",
@@ -35,8 +39,9 @@ const events = [
   {
     id: 4,
     title: "QalaKriti (UI Designing)",
-    date: "23 Feb 2025 (Day 2)",
+    date: "21 Feb 2025 (Day 2)",
     time: "9:00AM - 5:00AM",
+    link: "technicals/qalakriti",
     description:
       "QalaKriti invites you to design visually stunning and user-friendly interfaces that leave a lasting impression.",
     type: "IT",
@@ -44,8 +49,9 @@ const events = [
   {
     id: 5,
     title: "Art Of Debug (Debugging)",
-    date: "23 Feb 2025 (Day 2)",
+    date: "21 Feb 2025 (Day 2)",
     time: "10:00AM - 1:00PM",
+    link: "technicals/artofdebug",
     description:
       "Art of Debug tests your problem-solving prowess as you hunt and fix tricky bugs in this exciting debugging challenge.",
     type: "IT",
@@ -53,8 +59,9 @@ const events = [
   {
     id: 6,
     title: "QalaMind Quest (Aptitude Test)",
-    date: "23 Feb 2025 (Day 1)",
+    date: "21 Feb 2025 (Day 2)",
     time: "1:00AM - 5:00PM",
+    link: "technicals/qalamindquest",
     description:
       "QalaMind Quest pushes your logic and reasoning skills with puzzles and challenges designed to test your analytical abilities.",
     type: "IT",
@@ -131,7 +138,7 @@ export default function TechnicalEvent() {
                     className="bg-gray-900/50 p-6 rounded-lg border border-gray-800 hover:border-blue-500/50 transition-colors duration-300
                   backdrop-blur-sm relative overflow-hidden group cursor-pointer"
                   >
-                    <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-purple-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    <div className="absolute z-0 inset-0 bg-gradient-to-r from-blue-600/10 to-purple-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
                     <div className="absolute inset-0">
                       <div className="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-transparent group-hover:border-blue-500/50 transition-colors duration-300" />
@@ -139,13 +146,15 @@ export default function TechnicalEvent() {
                       <div className="absolute bottom-0 left-0 w-8 h-8 border-b-2 border-l-2 border-transparent group-hover:border-blue-500/50 transition-colors duration-300" />
                       <div className="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-transparent group-hover:border-blue-500/50 transition-colors duration-300" />
                     </div>
+                    <a href={event.link}>
+                      <motion.h3
+                        className="text-blue-500 text-xl font-bold mb-2 relative z-10"
+                        whileHover={{ scale: 1.05 }}
+                      >
+                        {event.title}
+                      </motion.h3>
+                    </a>
 
-                    <motion.h3
-                      className="text-blue-500 text-xl font-bold mb-2 relative z-10"
-                      whileHover={{ scale: 1.05 }}
-                    >
-                      {event.title}
-                    </motion.h3>
                     <p className="text-[#FF7EE2] font-medium mb-2 relative z-10">
                       Date: {event.date}
                     </p>
@@ -155,6 +164,11 @@ export default function TechnicalEvent() {
                     <p className="text-gray-300 relative z-10 group-hover:text-white transition-colors duration-300">
                       {event.description}
                     </p>
+                    <div className="flex relative justify-center z-10">
+                      <a href={event.link}>
+                        <button className="button-10"> view more</button>
+                      </a>
+                    </div>
                   </motion.div>
                 </motion.div>
               </motion.div>

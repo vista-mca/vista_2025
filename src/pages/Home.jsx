@@ -19,6 +19,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 import Hero from "@/components/HomeComponents/Hero";
 import OurSponsors from "@/components/HomeComponents/OurSponsors";
 import Sponsors from "@/components/HomeComponents/Sponsors";
+import Brochure from "@/components/HomeComponents/Brochure";
 
 const Home = () => {
   useEffect(() => {
@@ -48,6 +49,7 @@ const Home = () => {
         <Stats />
         <AboutUs />
         <AboutCollege />
+        <Brochure />
         {/*<ParticipateColleges />*/}
         <Events />
         <OurSponsors />

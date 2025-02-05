@@ -13,6 +13,7 @@ import adnanImg from "../assets/team/adnan.jpg";
 import priyanshuImg from "../assets/team/priyanshu.jpg";
 import alishaImg from "../assets/team/alisha.jpg";
 import sakshiImg from "../assets/team/sakshi.jpg";
+import amitImg from "../assets/team/amit.jpg";
 import ayushImg from "../assets/team/ayush.jpg";
 import omkarImg from "../assets/team/omkar.jpg";
 import TeamCard from "@/components/TeamCard";
@@ -130,6 +131,16 @@ const teamMembers = [
   },
   {
     id: 7,
+    name: "Amit Tiwari",
+    role: "Logistic Head",
+    image: amitImg,
+    instagram: "https://www.instagram.com/amittiwari__18/",
+    linkedin: "https://www.linkedin.com/in/amit-tiwari-63a43134a/",
+    youtube: "",
+    website: "",
+  },
+  {
+    id: 8,
     name: "Sakshi Singh",
     role: "Creative Head",
     image: sakshiImg,
@@ -139,7 +150,7 @@ const teamMembers = [
     website: "",
   },
   {
-    id: 8,
+    id: 9,
     name: "Omkar Prajapati",
     role: "Web Developer",
     image: omkarImg,
