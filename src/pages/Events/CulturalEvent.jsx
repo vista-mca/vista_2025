@@ -7,11 +7,12 @@ import { motion } from "framer-motion";
 const events = [
   {
     id: 1,
-    title: "PR Parade",
+    title: "Rap",
     date: "22 Feb 2025 (Day 1)",
-    time: "9:00AM - 10:30AM",
+    time: "9:30AM - 10:30AM",
+    link: "culturals/rap",
     description:
-      "Embark on a journey of knowledge and discovery with our IT Quiz, where curiosity meets technology at the IT Tech Fest event.",
+      "Engage in epic coding duels at CodeWar, where programmers clash in strategic challenges. Join us at the IT Event TECHBIT 4.0 to test your skills and dominate the code arena!",
     type: "IT",
   },
   {
@@ -19,69 +20,47 @@ const events = [
     title: "Singing",
     date: "22 Feb 2025 (Day 1)",
     time: "11:00AM - 1:00PM",
+    link: "culturals/singing",
     description:
       "Strike for victory in electrifying carrom battles. Join us at the IT Event TECHBIT 4.0 for exciting matches and become the carrom champion",
     type: "NON-IT",
   },
   {
     id: 3,
-    date: "22 Feb 2025 (Day 1)",
-    title: "Rap ( Elimination )",
-    time: "9:30AM - 10:30AM",
+    title: "Solo Dance",
+    date: "23 Feb 2025 (Day 2)",
+    time: "9:00AM - 11:00AM",
+    link: "culturals/solodance",
     description:
-      "Engage in epic coding duels at CodeWar, where programmers clash in strategic challenges. Join us at the IT Event TECHBIT 4.0 to test your skills and dominate the code arena!",
-    type: "IT",
+      "Strategize, attack, triumph. Immerse yourself in riveting chess battles at the IT Event TECHBIT 4.0, where minds clash and only the savviest prevail",
+    type: "NON-IT",
   },
   {
     id: 4,
-    date: "22 Feb 2025 (Day 1)",
-    title: "The Latent Show",
-    time: "4:00AM - 6:00PM",
+    title: "Group Dance",
+    date: "23 Feb 2025 (Day 2)",
+    time: "12:00PM - 2:00PM",
+    link: "culturals/groupdance",
     description:
       "Strategize, attack, triumph. Immerse yourself in riveting chess battles at the IT Event TECHBIT 4.0, where minds clash and only the savviest prevail",
     type: "NON-IT",
   },
   {
     id: 5,
-    title: "Solo Dance",
+    title: "Fashion Show",
     date: "23 Feb 2025 (Day 2)",
-    time: "9:00AM - 11:00AM",
+    time: "2:00PM - 4:00PM",
+    link: "culturals/fashionshow",
     description:
       "Strategize, attack, triumph. Immerse yourself in riveting chess battles at the IT Event TECHBIT 4.0, where minds clash and only the savviest prevail",
     type: "NON-IT",
   },
   {
     id: 6,
-    title: "Rap ( Finals )",
-    date: "23 Feb 2025 (Day 2)",
-    time: "11:00AM - 12:00PM",
-    description:
-      "Strategize, attack, triumph. Immerse yourself in riveting chess battles at the IT Event TECHBIT 4.0, where minds clash and only the savviest prevail",
-    type: "NON-IT",
-  },
-  {
-    id: 7,
-    title: "Group Dance",
-    date: "23 Feb 2025 (Day 2)",
-    time: "12:00PM - 2:00PM",
-    description:
-      "Strategize, attack, triumph. Immerse yourself in riveting chess battles at the IT Event TECHBIT 4.0, where minds clash and only the savviest prevail",
-    type: "NON-IT",
-  },
-  {
-    id: 7,
-    title: "Fashion Show",
-    date: "23 Feb 2025 (Day 2)",
-    time: "2:00PM - 4:00PM",
-    description:
-      "Strategize, attack, triumph. Immerse yourself in riveting chess battles at the IT Event TECHBIT 4.0, where minds clash and only the savviest prevail",
-    type: "NON-IT",
-  },
-  {
-    id: 7,
     title: "MR & MS Vista",
     date: "23 Feb 2025 (Day 2)",
     time: "4:00PM - 5:00PM",
+    link: "culturals/mrmsvista",
     description:
       "Strategize, attack, triumph. Immerse yourself in riveting chess battles at the IT Event TECHBIT 4.0, where minds clash and only the savviest prevail",
     type: "NON-IT",
@@ -166,13 +145,14 @@ export default function CulturalEvent() {
                       <div className="absolute bottom-0 left-0 w-8 h-8 border-b-2 border-l-2 border-transparent group-hover:border-blue-500/50 transition-colors duration-300" />
                       <div className="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-transparent group-hover:border-blue-500/50 transition-colors duration-300" />
                     </div>
-
-                    <motion.h3
-                      className="text-blue-500 text-xl font-bold mb-2 relative z-10"
-                      whileHover={{ scale: 1.05 }}
-                    >
-                      {event.title}
-                    </motion.h3>
+                    <a href={event.link}>
+                      <motion.h3
+                        className="text-blue-500 text-xl font-bold mb-2 relative z-10"
+                        whileHover={{ scale: 1.05 }}
+                      >
+                        {event.title}
+                      </motion.h3>
+                    </a>
                     <p className="text-[#FF7EE2] font-medium mb-2 relative z-10">
                       Date: {event.date}
                     </p>
@@ -182,6 +162,11 @@ export default function CulturalEvent() {
                     <p className="text-gray-300 relative z-10 group-hover:text-white transition-colors duration-300">
                       {event.description}
                     </p>
+                    <div className="flex relative justify-center z-10">
+                      <a href={event.link}>
+                        <button className="button-10"> view more</button>
+                      </a>
+                    </div>
                   </motion.div>
                 </motion.div>
               </motion.div>

@@ -11,122 +11,139 @@ import {
 } from "lucide-react";
 import { useParams } from "react-router-dom";
 
-export default function EventDetails() {
+export default function CulturalSubEvents() {
   const { eventName } = useParams();
   let data = {};
-  if (eventName === "qalainnovate") {
+  if (eventName === "singing") {
     data = {
-      title: "QalaInnovate",
-      summary: " 💻🚀 Code, innovate, and solve real-world problems. 💻🚀",
+      title: "Singing",
+      summary: "🎤🎶 Showcase your voice and talent. 🎤🎶",
       description:
-        "Step into the world of innovation and creativity with QalaInnovate! This high-energy hackathon is your chance to turn big ideas into reality. Collaborate, code, and craft solutions to real-world problems while competing against the brightest minds in tech.",
+        "Let your voice be the melody that captivates hearts! Whether you sing soulful ballads, high-energy pop, or classical tunes, this stage is yours to shine. Showcase your vocal skills, express emotions through music, and leave the audience mesmerized with your performance.",
+      banner: "singing.jpg",
       rules: [
-        "Group participation of min 3 and max 5 members in each group.",
-        "The participants have to bring their own system.",
-        "The problem statement will be given on the event day.",
-        "The timing will be from morning 9 to evening 5.",
-        "There will be top 3 cash prizes.",
-        "Registration amount ₹500 per team.",
-        "Judge’s and event heads’ decisions will be considered final.",
+        "General rules are applicable.",
+        "2 student participant is permitted per contingent.",
+        "Background music is allowed.",
+        "Instruments are allowed if played by the participant or one accompaniment.",
+        "Hindi, Marathi, English songs are permissible.",
+        "Time limit: Min 2 & Max 3 minutes.",
+        "Vulgar words, offensive gestures or any kind of misbehaviour shall lead to negative marking or even disqualification.",
+        "Participants must carry the soft copy of their background music in their mobiles and must notify the event head at least 2 days prior to the event.",
+        "Judge's decision will be final.",
       ],
-      participant: ["It is a group game.", "3 to 5 member per group."],
-      time: ["Coding : 9:00AM - 3:00PM", "Result : 3:00PM - 5:00PM"],
-      price: [
-        "🥇1st prize:- ₹3,000",
-        "🥈2nd prize:- ₹1,800",
-        "🥉3rd prize:- ₹1,200",
-      ],
+      participant: ["N/A"],
+      time: ["N/A"],
+      price: ["N/A"],
       venue: "Venue Will Be Revealed Soon",
     };
-  } else if (eventName === "framefusion") {
+  } else if (eventName === "rap") {
     data = {
-      title: "Frame Fusion",
-      summary: "🎬🎥 Create impactful films with creativity. 🎬🎥",
+      title: "Rap (Elimination)",
+      summary: "🎙️🔥 Battle with words and rhythm. 🎙️🔥",
       description:
-        "Unleash your storytelling power with FrameFusion! Whether it’s drama, comedy, or a thriller, this event challenges you to create impactful short films that inspire and entertain. Lights, camera, creativity!",
+        "Are you ready to drop some bars? Step into the world of rhythm and wordplay, where creativity meets confidence. Compete in an intense lyrical showdown, impress the judges with your flow and punchlines, and battle your way to the finals. Only the best will move forward!",
+      banner: "rap.jpg",
       rules: [
-        "The participants have to make a short video about Vista and its events of about 30-60 seconds.",
-        "The content has to be original.",
-        "Best video will be uploaded on Vista’s Instagram handle.",
-        "Registration amount ₹50.",
-        "Judge’s and event heads’ decisions will be considered final.",
+        "2 student participants are permitted per contingent.",
+        "The rap can be in Hindi, English, or Marathi.",
+        "Time limit: Min 2 & Max 3 minutes.",
+        "Rappers can bring their own beatboxer if they want.",
+        "Vulgar words, offensive gestures, and language can lead to reduction in points and even disqualification.",
+        "Participants must carry the soft copy of their background music in their mobiles and must notify the event head at least 2 days prior to the event.",
+        "Judge's decision will be final.",
       ],
-      participant: ["It is a solo game.", "Total 25 participants."],
-      time: ["Coding : 9:00AM - 3:00PM", "Result : 3:00PM - 5:00PM"],
-      price: ["🥇1st prize:- ₹500"],
+      participant: ["N/A"],
+      time: ["N/A"],
+      price: ["N/A"],
       venue: "Venue Will Be Revealed Soon",
     };
-  } else if (eventName === "codecraft") {
+  } else if (eventName === "solodance") {
     data = {
-      title: "CodeCraft Battle",
-      summary: "⚔️👨‍💻 Solve coding challenges, compete, and win. ⚔️👨‍💻",
+      title: "Solo Dance",
+      summary: "💃🎵 Express emotions through dance. 💃🎵",
       description:
-        "Test your logic, speed, and coding skills in the ultimate programming showdown! CodeCraft Battle is designed for competitive programmers who thrive on solving challenging problems under pressure. Are you ready to claim the champion’s spot?",
+        "Dance like no one’s watching—except everyone will be! Whether it’s classical, hip-hop, contemporary, or freestyle, bring your energy and passion to the stage. Express emotions through movement, stun the audience with your rhythm, and own the dance floor with an electrifying performance.",
+      banner: "solodance.jpg",
       rules: [
-        "Solo participation will be allowed.",
-        "There will be 3 rounds: 1st round will be elimination round. Participants clearing the 1st round will proceed to the 2nd round which is the qualifying round. Finally, the participants clearing the 2nd round will proceed to the final round.",
-        "Time limit will be 45 mins. The participant will be given 10 minutes for 1st question, 15 minutes for the 2nd and 20 minutes for the 3rd.",
-        "Programming languages: C/C++, Java, Python.",
-        "The winner will be finalised on the basis of code efficiency and the time taken to solve the question.",
-        "Registration amount ₹50.",
-        "Judge’s and event heads’ decisions will be considered final.",
+        "Theme: Open.",
+        "2 student participant is permitted per contingent.",
+        "Participant must bring their own props if needed.",
+        "Time limit: For each performance 5 mins.",
+        "Participant must carry the soft copy of their background music in their mobiles and must notify the event head at least 2 days prior to the event.",
+        "Any sort of vulgarity, profanity and obscenity will lead to negative marking and even disqualification.",
+        "Judge's decision will be final.",
       ],
-      participant: ["It is a solo game.", "Total 25 participants."],
-      time: ["Coding : 10:00AM - 12:00PM", "Result : 12:00PM - 1:00PM"],
-      price: ["🥇1st prize:- ₹800", "🥈2nd prize:- ₹500"],
+      participant: ["N/A"],
+      time: ["N/A"],
+      price: ["N/A"],
       venue: "Venue Will Be Revealed Soon",
     };
-  } else if (eventName === "qalakriti") {
+  } else if (eventName === "groupdance") {
     data = {
-      title: "QalaKriti",
-      summary: "🎨🖥️ Design stunning, user-friendly digital interfaces. 🎨🖥️",
+      title: "Group Dance",
+      summary: "🕺💫 Synchronize and groove together. 🕺💫",
       description:
-        "Transform ideas into visually stunning and user-friendly designs with QalaKriti! Show off your design skills as you craft interfaces that are not just functional but also a delight to experience. It's your canvas—let your imagination run wild!",
+        "When dance meets teamwork, magic happens! Put together a powerhouse performance with your group, blending style, coordination, and creativity. Whether it's Bollywood, hip-hop, contemporary, or fusion, deliver a jaw-dropping performance that leaves the audience cheering for more!",
+      banner: "groupdance.jpg",
       rules: [
-        "Participants have to design a website having more than 1 webpage.",
-        "Use of frameworks like Figma, React, Angular, jQuery are allowed.",
-        "Problem statement will be given on event day.",
-        "Registration amount ₹50.",
-        "Judge’s and event heads’ decisions will be considered final.",
+        "Theme: Open.",
+        "2 student participant is permitted per contingent.",
+        "Participant must bring their own props if needed.",
+        "Time limit: For each performance 5 mins.",
+        "Participant must carry the soft copy of their background music in their mobiles and must notify the event head at least 2 days prior to the event.",
+        "Any sort of vulgarity, profanity and obscenity will lead to negative marking and even disqualification.",
+        "Judge's decision will be final.",
       ],
-      participant: ["It is a solo game.", "Total 25 participants."],
-      time: ["Coding : 9:00AM - 3:00PM", "Result : 3:00PM - 5:00PM"],
-      price: ["🥇1st prize:- ₹800", "🥈2nd prize:- ₹300"],
+      participant: ["N/A"],
+      time: ["N/A"],
+      price: ["N/A"],
       venue: "Venue Will Be Revealed Soon",
     };
-  } else if (eventName === "artofdebug") {
+  } else if (eventName === "fashionshow") {
     data = {
-      title: "Art Of Debug",
-      summary: "🐞🔍 Find and fix tricky bugs fast. 🐞🔍",
+      title: "Fashion Show",
+      summary: "👗✨ Walk the runway in style. 👗✨",
       description:
-        "Embrace the challenge of hunting down elusive bugs and fixing them like a pro! Art of Debug is where your problem-solving skills meet your coding expertise. Can you crack the code and debug your way to victory?",
+        "Style, elegance, and confidence—this is your chance to shine on the runway! Showcase the latest trends, express your fashion statement, and own the stage with your charisma. Whether bold or classic, this event is all about expressing yourself through fashion.",
+      banner: "fashion.jpg",
       rules: [
-        "Solo participation will be allowed.",
-        "There will be 2 rounds: 1st round will be elimination round. Finally, the participants clearing the 1st round will proceed to the final round.",
-        "Registration amount ₹50.",
-        "Judge’s and event heads’ decisions will be considered final.",
+        "Theme: Open.",
+        "1 team is permitted per contingent.",
+        "A team of 8-10 students from the same college.",
+        "Use of props is allowed.",
+        "They are expected to report an hour in advance.",
+        "They must carry the soft copy of the background music in their mobiles and must notify the event head at least 2 days prior to the event.",
+        "Time limit: For each performance will be 10 minutes.",
+        "No obscene language or unethical practices must be done during the course of the event.",
+        "Any form of such vulgarity found will lead to debarring the participant from the event.",
+        "Judge's decision will be final.",
       ],
-      participant: ["It is a solo game.", "Total 25 participants."],
-      time: ["Coding : 10:00AM - 12:00PM", "Result : 12:00PM - 1:00PM"],
-      price: ["🥇1st prize:- ₹600", "🥈2nd prize:- ₹300"],
+      participant: ["N/A"],
+      time: ["N/A"],
+      price: ["N/A"],
       venue: "Venue Will Be Revealed Soon",
     };
-  } else if (eventName === "qalamindquest") {
+  } else if (eventName === "mrmsvista") {
     data = {
-      title: "QalaMind Quest",
-      summary: "🧠🤔 Solve logical puzzles and test reasoning. 🧠🤔",
+      title: "Mr/Ms Vista",
+      summary: "👑🎖️ Compete for charm and elegance. 👑🎖️",
       description:
-        "Push your mental boundaries and showcase your analytical prowess in QalaMind Quest! From logical puzzles to mathematical challenges, this aptitude test will determine who’s got the sharpest mind in the game.",
+        "A search for the most charismatic and talented personalities of Vista Fest! Participants will be judged on confidence, intelligence, talent, and their ability to leave a lasting impression. Prove you have what it takes to be crowned Mr. or Ms. Vista!",
+      banner: "mrmsvista.jpg",
       rules: [
-        "The quiz will be on an online quiz platform.",
-        "There will be 3 rounds.",
-        "Quiz will be on Coding, Logical and Reasoning, and Quantitative.",
-        "Registration amount ₹50.",
-        "Judges' and event heads' decisions will be considered final.",
+        "1 participant is permitted per contingent. [A girl & a boy]",
+        "1st round: Walk and personality round.",
+        "2nd round: Talent round [1-2 mins].",
+        "3rd round: Q/A round.",
+        "Elimination will be done after every round.",
+        "Any form of vulgarity & foul language will lead to disqualification.",
+        "Track MP3 file should be submitted to the event head at least 2 days prior to the event.",
+        "Judge's decision will be final.",
       ],
-      participant: ["It is a solo game.", "Total 25 participants."],
-      time: ["Coding : 1:00AM - 3:00PM", "Result : 3:00PM - 5:00PM"],
-      price: ["🥇1st prize:- ₹500", "🥈2nd prize:- ₹300", "🥉3rd prize:- ₹200"],
+      participant: ["N/A"],
+      time: ["N/A"],
+      price: ["N/A"],
       venue: "Venue Will Be Revealed Soon",
     };
   }
@@ -141,7 +158,10 @@ export default function EventDetails() {
         transition={{ duration: 1 }}
       >
         <div className="absolute inset-0 bg-[url('/placeholder.svg?height=500&width=1920')] bg-cover bg-center">
-          <div className="absolute inset-0 bg-gradient-to-r from-purple-900/90 via-blue-900/90 to-gray-950/90" />
+          <div
+            style={{ backgroundImage: `url('/banner/${data.banner}')` }}
+            className="absolute inset-0 bg-cover bg-top  opacity-30"
+          />
         </div>
 
         <div className="relative h-full container mx-auto px-4 flex flex-col items-center justify-center text-center">

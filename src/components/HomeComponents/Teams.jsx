@@ -15,6 +15,7 @@ import alishaImg from "../../assets/team/alisha.jpg";
 import sakshiImg from "../../assets/team/sakshi.jpg";
 import ayushImg from "../../assets/team/ayush.jpg";
 import omkarImg from "../../assets/team/omkar.jpg";
+import amitImg from "../../assets/team/amit.jpg";
 import { useState } from "react";
 import { Card, CardContent } from "../ui/card";
 import { FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
@@ -109,7 +110,6 @@ const Teams = () => {
       name: "Ayush Tiwari",
       role: "Cultural Head",
       image: ayushImg,
-      instagram: "https://www.instagram.com/alishk_08",
       instagram: "https://www.instagram.com/hey.ayussh",
       linkedin: "https://www.linkedin.com/in/ayush-tiwari-151866225",
       website: "",
@@ -136,6 +136,16 @@ const Teams = () => {
     },
     {
       id: 7,
+      name: "Amit Tiwari",
+      role: "Logistic Head",
+      image: amitImg,
+      instagram: "https://www.instagram.com/amittiwari__18/",
+      linkedin: "https://www.linkedin.com/in/amit-tiwari-63a43134a/",
+      youtube: "",
+      website: "",
+    },
+    {
+      id: 8,
       name: "Sakshi Singh",
       role: "Creative Head",
       image: sakshiImg,
@@ -145,7 +155,7 @@ const Teams = () => {
       website: "",
     },
     {
-      id: 8,
+      id: 9,
       name: "Omkar Prajapati",
       role: "Web Developer",
       image: omkarImg,
