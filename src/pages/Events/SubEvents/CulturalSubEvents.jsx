@@ -186,22 +186,27 @@ export default function CulturalSubEvents() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.6 }}
           >
-            <motion.button
-              className="px-8 py-3 bg-blue-600 rounded-full font-semibold text-lg relative overflow-hidden group"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeNF-6vY2_PLZbjGSgdmcPRD-ZL3PUKH07OiYbPSdjoi4wQow/viewform"
+              target="_blank"
             >
-              <span className="relative z-10">Register Now</span>
-              <motion.div
-                className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600"
-                initial={{ x: "100%" }}
-                whileHover={{ x: 0 }}
-                transition={{ duration: 0.3 }}
-              />
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-blue-500 blur-xl" />
-              </div>
-            </motion.button>
+              <motion.button
+                className="px-8 py-3 bg-blue-600 rounded-full font-semibold text-lg relative overflow-hidden group"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <span className="relative z-10">Register Now</span>
+                <motion.div
+                  className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600"
+                  initial={{ x: "100%" }}
+                  whileHover={{ x: 0 }}
+                  transition={{ duration: 0.3 }}
+                />
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-blue-500 blur-xl" />
+                </div>
+              </motion.button>
+            </a>
           </motion.div>
         </div>
       </motion.div>
