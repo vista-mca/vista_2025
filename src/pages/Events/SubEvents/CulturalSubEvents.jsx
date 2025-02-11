@@ -35,7 +35,7 @@ export default function CulturalSubEvents() {
       participant: ["N/A"],
       time: ["N/A"],
       price: ["N/A"],
-      venue: "Venue Will Be Revealed Soon",
+      venue: "TIMSCDR",
     };
   } else if (eventName === "rap") {
     data = {
@@ -56,7 +56,7 @@ export default function CulturalSubEvents() {
       participant: ["N/A"],
       time: ["N/A"],
       price: ["N/A"],
-      venue: "Venue Will Be Revealed Soon",
+      venue: "TIMSCDR",
     };
   } else if (eventName === "solodance") {
     data = {
@@ -77,7 +77,7 @@ export default function CulturalSubEvents() {
       participant: ["N/A"],
       time: ["N/A"],
       price: ["N/A"],
-      venue: "Venue Will Be Revealed Soon",
+      venue: "TIMSCDR",
     };
   } else if (eventName === "groupdance") {
     data = {
@@ -98,7 +98,7 @@ export default function CulturalSubEvents() {
       participant: ["N/A"],
       time: ["N/A"],
       price: ["N/A"],
-      venue: "Venue Will Be Revealed Soon",
+      venue: "TIMSCDR",
     };
   } else if (eventName === "fashionshow") {
     data = {
@@ -122,7 +122,7 @@ export default function CulturalSubEvents() {
       participant: ["N/A"],
       time: ["N/A"],
       price: ["N/A"],
-      venue: "Venue Will Be Revealed Soon",
+      venue: "TIMSCDR",
     };
   } else if (eventName === "mrmsvista") {
     data = {
@@ -144,7 +144,7 @@ export default function CulturalSubEvents() {
       participant: ["N/A"],
       time: ["N/A"],
       price: ["N/A"],
-      venue: "Venue Will Be Revealed Soon",
+      venue: "TIMSCDR",
     };
   }
 

@@ -11,6 +11,7 @@ import ESports from "./pages/Events/ESports";
 // import SubEventTemplate from "./pages/Events/SubEventTemplate";
 import TechnicalSubEvents from "./pages/Events/SubEvents/TechnicalSubEvents";
 import CulturalSubEvents from "./pages/Events/SubEvents/CulturalSubEvents";
+import SportsSubEvents from "./pages/Events/SubEvents/SportsSubEvents";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             element={<TechnicalSubEvents />}
           />
           <Route path="/events/sports" element={<SportEvent />} />
+          <Route path="/events/sports/:eventName" element={<SportsSubEvents />} />
 
           <Route path="/events/culturals" element={<CulturalEvent />} />
           <Route
@@ -35,6 +37,10 @@ function App() {
             element={<CulturalSubEvents />}
           />
           <Route path="/events/esports" element={<ESports />} />
+          <Route
+            path="/events/esports/:eventName"
+            element={<TechnicalSubEvents />}
+          />
         </Route>
       </Routes>
     </>

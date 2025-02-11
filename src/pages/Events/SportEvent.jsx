@@ -7,51 +7,33 @@ import { motion } from "framer-motion";
 const events = [
   {
     id: 1,
-    title: "Box Cricket",
-    date: "20 Feb 2025 (Day 1)",
-    time: "9:00AM - 5:00PM",
-    link: "events/technicals/qalainnovate",
-    description:
-      "At QalaInnovate, team up to build creative, real-world solutions in an intense and innovative coding marathon.",
-    type: "IT",
-  },
-  {
-    id: 2,
     title: "Chess",
     date: "20 Feb 2025 (Day 1)",
     time: "10:00AM - 5:00PM",
-    link: "events/technicals/qalainnovate",
+    link: "sports/chess",
     description:
       "In FrameFusion, let your creativity shine by crafting compelling short films that inspire, entertain, and tell powerful stories.",
     type: "IT",
   },
   {
-    id: 3,
+    id: 2,
     title: "Carrom",
     date: "20 Feb 2025 (Day 1)",
     time: "10:00AM - 5:00PM",
-    link: "events/technicals/qalainnovate",
+
+    link: "sports/carrom",
     description:
       "CodeCraft Battle challenges you to solve complex programming problems against the clock while competing with top coders.",
     type: "IT",
   },
   {
-    id: 4,
+    id: 3,
     title: "Table Tennis",
     date: "20 Feb 2025 (Day 1)",
     time: "10:00AM - 5:00PM",
+    link: "sports/tabletennis",
     description:
       "QalaKriti invites you to design visually stunning and user-friendly interfaces that leave a lasting impression.",
-    type: "IT",
-  },
-  {
-    id: 5,
-    title: "Tug Of War",
-    date: "20 Feb 2025 (Day 1)",
-    time: "12:00PM - 5:00PM",
-    link: "events/technicals/qalainnovate",
-    description:
-      "Art of Debug tests your problem-solving prowess as you hunt and fix tricky bugs in this exciting debugging challenge.",
     type: "IT",
   },
 ];
@@ -134,13 +116,14 @@ export default function SportEvent() {
                       <div className="absolute bottom-0 left-0 w-8 h-8 border-b-2 border-l-2 border-transparent group-hover:border-blue-500/50 transition-colors duration-300" />
                       <div className="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-transparent group-hover:border-blue-500/50 transition-colors duration-300" />
                     </div>
-
-                    <motion.h3
-                      className="text-blue-500 text-xl font-bold mb-2 relative z-10"
-                      whileHover={{ scale: 1.05 }}
-                    >
-                      {event.title}
-                    </motion.h3>
+                    <a href={event.link}>
+                      <motion.h3
+                        className="text-blue-500 text-xl font-bold mb-2 relative z-10"
+                        whileHover={{ scale: 1.05 }}
+                      >
+                        {event.title}
+                      </motion.h3>
+                    </a>
                     <p className="text-[#FF7EE2] font-medium mb-2 relative z-10">
                       Date: {event.date}
                     </p>
@@ -150,6 +133,11 @@ export default function SportEvent() {
                     <p className="text-gray-300 relative z-10 group-hover:text-white transition-colors duration-300">
                       {event.description}
                     </p>
+                    <div className="flex relative justify-center z-10">
+                      <a href={event.link}>
+                        <button className="button-10"> view more</button>
+                      </a>
+                    </div>
                   </motion.div>
                 </motion.div>
               </motion.div>

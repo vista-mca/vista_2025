@@ -17,7 +17,7 @@ import amitImg from "../assets/team/amit.jpg";
 import ayushImg from "../assets/team/ayush.jpg";
 import omkarImg from "../assets/team/omkar.jpg";
 import TeamCard from "@/components/TeamCard";
-const coreMembers = [
+const chairMembers = [
   {
     id: 1,
     name: "Prem Sahu",
@@ -59,7 +59,7 @@ const coreMembers = [
     website: "",
   },
 ];
-const teamMembers = [
+const coreMembers = [
   {
     id: 1,
     name: "Alpesh Saxena",
@@ -160,6 +160,48 @@ const teamMembers = [
     website: "https://commercewale.in/",
   },
 ];
+const teamMembers = [
+  {
+    id: 1,
+    name: "Prem Sahu",
+    role: "President",
+    image: premImg,
+    linkedin: "https://www.linkedin.com/in/premsahudeveloper/",
+    instagram: "https://www.instagram.com/premsxhu/",
+    youtube: "",
+    website: "",
+  },
+  {
+    id: 2,
+    name: "Shruti Prajapati",
+    role: "Vice President",
+    image: shurtiImg,
+    linkedin: "https://www.linkedin.com/in/shrutii-prajapatii-499a75314/",
+    instagram: "https://www.instagram.com/__shruutzz__/",
+    youtube: "",
+    website: "",
+  },
+  {
+    id: 3,
+    name: "Aditya Patil",
+    role: "Event Co-ordinator",
+    image: adityaImg,
+    linkedin: "",
+    instagram: "https://www.instagram.com/8unnyyy.who/",
+    youtube: "",
+    website: "",
+  },
+  {
+    id: 4,
+    name: "Vijeta Yadav",
+    role: "Event Co-ordinator",
+    image: vijetaImg,
+    linkedin: "https://www.linkedin.com/in/vijeta-yadav-980028330/",
+    instagram: "https://www.instagram.com/whoisvijeta_._/",
+    youtube: "",
+    website: "",
+  },
+];
 export default function Team() {
   return (
     <div>
@@ -174,7 +216,7 @@ export default function Team() {
 
         <div className="px-4 md:px-6">
           <div className="flex flex-wrap my-8 justify-center gap-6">
-            {coreMembers.map(
+            {chairMembers.map(
               ({
                 id,
                 name,
@@ -199,7 +241,7 @@ export default function Team() {
             )}
           </div>
           <div className="flex flex-wrap my-8 justify-center gap-6">
-            {teamMembers.map(
+            {coreMembers.map(
               ({
                 id,
                 name,
