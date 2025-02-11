@@ -10,179 +10,127 @@ import {
   Trophy,
 } from "lucide-react";
 import { useParams } from "react-router-dom";
+import chess from "/banner/chess.jpg";
+import carrom from "/banner/carrom.jpg";
+import tabletennis from "/banner/tabletennis.jpg";
 
-export default function TechnicalSubEvents() {
+export default function SportsSubEvents() {
   const { eventName } = useParams();
   let data = {};
-  if (eventName === "qalainnovate") {
+  if (eventName === "chess") {
     data = {
-      title: "QalaInnovate",
-      summary: " 💻🚀 Code, innovate, and solve real-world problems. 💻🚀",
+      title: "Chess",
+      summary: "♟️ Test your strategy and skill! ♟️",
       description:
-        "Step into the world of innovation and creativity with QalaInnovate! This high-energy hackathon is your chance to turn big ideas into reality. Collaborate, code, and craft solutions to real-world problems while competing against the brightest minds in tech.",
-      banner: "hackathon.jpg",
+        "Challenge your mind and outthink your opponent in a battle of wits. Plan your moves, anticipate your rival's strategy, and checkmate your way to victory in this intense chess showdown!",
+      banner: "chess.jpg",
       rules: [
-        "Group participation of min 3 and max 5 members in each group.",
-        "The participants have to bring their own system.",
-        "The problem statement will be given on the event day.",
-        "The timing will be from morning 9 to evening 5.",
-        "There will be top 3 cash prizes.",
-        "Registration amount ₹500 per team.",
-        "Judge’s and event heads’ decisions will be considered final.",
+        "Objective: The game is won by either checkmating the opponent’s king or by forcing a resignation.",
+        "Time Control: Players have a set time limit of 10 minutes each.",
+        "Gameplay:",
+        "1. Each player moves one piece at a time, except for the Knight, which can jump over other pieces.",
+        "2. Pawns move forward one square at a time but capture diagonally.",
+        "3. Castling is allowed under specific conditions.",
+        "Registration amount: ₹50.",
       ],
-      participant: ["It is a group game.", "3 to 5 member per group."],
-      time: ["Coding : 9:00AM - 3:00PM", "Result : 3:00PM - 5:00PM"],
-      price: [
-        "🥇1st prize:- ₹3,000",
-        "🥈2nd prize:- ₹1,800",
-        "🥉3rd prize:- ₹1,200",
-      ],
+      participant: ["Individual"],
+      time: ["10:00AM - 5:00PM"],
+      price: ["500 Rs."],
       venue: "TIMSCDR",
     };
-  } else if (eventName === "framefusion") {
+  } else if (eventName === "carrom") {
     data = {
-      title: "Frame Fusion",
-      summary: "🎬🎥 Create impactful films with creativity. 🎬🎥",
+      title: "Carrom",
+      summary: "🎯 Aim, strike, and pocket to win! 🎯",
       description:
-        "Unleash your storytelling power with FrameFusion! Whether it’s drama, comedy, or a thriller, this event challenges you to create impactful short films that inspire and entertain. Lights, camera, creativity!",
-      banner: "shortfilm.jpg",
+        "Show off your precision and strategy in this classic board game. Pot all your pieces before your opponent and claim victory in this fast-paced, skill-based competition!",
+      banner: "carrom.jpg",
       rules: [
-        "The participants have to make a short video about Vista and its events of about 30-60 seconds.",
-        "The content has to be original.",
-        "Best video will be uploaded on Vista’s Instagram handle.",
-        "Registration amount ₹50.",
-        "Judge’s and event heads’ decisions will be considered final.",
+        "Objective: The goal is to pot your own set of pieces (either white or black) before the opponent, followed by the queen.",
+        "Board Setup: The game is played on a square board with 9 carrom men (pieces) for each player (white and black) and 1 red queen.",
+        "Gameplay:",
+        "1. Players take turns to strike with a striker using their fingers to hit the pieces.",
+        "2. A piece is potted when it is sent into one of the corner pockets.",
+        "3. The queen must be potted, and then followed by a valid piece (white/black) to win.",
+        "Registration amount: ₹100 (Team of 2).",
       ],
-      participant: ["It is a solo game.", "Total 25 participants."],
-      time: ["Coding : 9:00AM - 3:00PM", "Result : 3:00PM - 5:00PM"],
-      price: ["🥇1st prize:- ₹500"],
+      participant: ["Team of 2"],
+      time: ["10:00AM - 5:00PM"],
+      price: ["500 Rs."],
       venue: "TIMSCDR",
     };
-  } else if (eventName === "codecraft") {
+  } else if (eventName === "tabletennis") {
     data = {
-      title: "CodeCraft Battle",
-      summary: "⚔️👨‍💻 Solve coding challenges, compete, and win. ⚔️👨‍💻",
+      title: "Table Tennis",
+      summary: "🏓 Fast-paced rallies and thrilling smashes! 🏓",
       description:
-        "Test your logic, speed, and coding skills in the ultimate programming showdown! CodeCraft Battle is designed for competitive programmers who thrive on solving challenging problems under pressure. Are you ready to claim the champion’s spot?",
-      banner: "coding.jpg",
+        "Test your reflexes and agility in an intense table tennis match! Serve, rally, and smash your way to the top in this high-energy game of skill and speed.",
+      banner: "tabletennis.jpg",
       rules: [
-        "Solo participation will be allowed.",
-        "There will be 3 rounds: 1st round will be elimination round. Participants clearing the 1st round will proceed to the 2nd round which is the qualifying round. Finally, the participants clearing the 2nd round will proceed to the final round.",
-        "Time limit will be 45 mins. The participant will be given 10 minutes for 1st question, 15 minutes for the 2nd and 20 minutes for the 3rd.",
-        "Programming languages: C/C++, Java, Python.",
-        "The winner will be finalised on the basis of code efficiency and the time taken to solve the question.",
-        "Registration amount ₹50.",
-        "Judge’s and event heads’ decisions will be considered final.",
+        "Objective: The objective of the game is to score points by making the ball bounce twice on the opponent’s side of the table.",
+        "Gameplay:",
+        "1. The ball must be served from behind the end line, and it must bounce once on the server's side and once on the receiver’s side.",
+        "2. Players alternate hits. The ball must pass over the net after being struck.",
+        "3. A point is awarded if the opponent fails to return the ball or commits a fault.",
+        "Winning Conditions: Matches will be played to 11 points, and a player must win by 2 points.",
+        "Registration amount: ₹50",
       ],
-      participant: ["It is a solo game.", "Total 25 participants."],
-      time: ["Coding : 10:00AM - 12:00PM", "Result : 12:00PM - 1:00PM"],
-      price: ["🥇1st prize:- ₹800", "🥈2nd prize:- ₹500"],
+      participant: ["Individual"],
+      time: ["10:00AM - 5:00PM"],
+      price: ["500 Rs."],
       venue: "TIMSCDR",
     };
-  } else if (eventName === "qalakriti") {
+  } else if (eventName === "tugofwar") {
     data = {
-      title: "QalaKriti",
-      summary: "🎨🖥️ Design stunning, user-friendly digital interfaces. 🎨🖥️",
+      title: "Tug of War",
+      summary: "💪 Pull with all your might! 💪",
       description:
-        "Transform ideas into visually stunning and user-friendly designs with QalaKriti! Show off your design skills as you craft interfaces that are not just functional but also a delight to experience. It's your canvas—let your imagination run wild!",
-      banner: "web.jpg",
+        "Gather your strength and teamwork in this ultimate test of power! Work together, hold your ground, and pull your way to victory against the opposing team.",
+      banner: "tugofwar.jpg",
       rules: [
-        "Participants have to design a website having more than 1 webpage.",
-        "Use of frameworks like Figma, React, Angular, jQuery are allowed.",
-        "Problem statement will be given on event day.",
-        "Registration amount ₹50.",
-        "Judge’s and event heads’ decisions will be considered final.",
+        "Theme: Open.",
+        "1 team is permitted per contingent.",
+        "A team of 8-10 students from the same college.",
+        "Use of props is allowed.",
+        "They are expected to report an hour in advance.",
+        "They must carry the soft copy of the background music in their mobiles and must notify the event head at least 2 days prior to the event.",
+        "Time limit: For each performance will be 10 minutes.",
+        "No obscene language or unethical practices must be done during the course of the event.",
+        "Any form of such vulgarity found will lead to debarring the participant from the event.",
+        "Judge's decision will be final.",
       ],
-      participant: ["It is a solo game.", "Total 25 participants."],
-      time: ["Coding : 9:00AM - 3:00PM", "Result : 3:00PM - 5:00PM"],
-      price: ["🥇1st prize:- ₹800", "🥈2nd prize:- ₹300"],
-      venue: "TIMSCDR",
-    };
-  } else if (eventName === "artofdebug") {
-    data = {
-      title: "Art Of Debug",
-      summary: "🐞🔍 Find and fix tricky bugs fast. 🐞🔍",
-      description:
-        "Embrace the challenge of hunting down elusive bugs and fixing them like a pro! Art of Debug is where your problem-solving skills meet your coding expertise. Can you crack the code and debug your way to victory?",
-      banner: "debug.jpg",
-      rules: [
-        "Solo participation will be allowed.",
-        "There will be 2 rounds: 1st round will be elimination round. Finally, the participants clearing the 1st round will proceed to the final round.",
-        "Registration amount ₹50.",
-        "Judge’s and event heads’ decisions will be considered final.",
-      ],
-      participant: ["It is a solo game.", "Total 25 participants."],
-      time: ["Coding : 10:00AM - 12:00PM", "Result : 12:00PM - 1:00PM"],
-      price: ["🥇1st prize:- ₹600", "🥈2nd prize:- ₹300"],
-      venue: "TIMSCDR",
-    };
-  } else if (eventName === "qalamindquest") {
-    data = {
-      title: "QalaMind Quest",
-      summary: "🧠🤔 Solve logical puzzles and test reasoning. 🧠🤔",
-      description:
-        "Push your mental boundaries and showcase your analytical prowess in QalaMind Quest! From logical puzzles to mathematical challenges, this aptitude test will determine who’s got the sharpest mind in the game.",
-      banner: "quiz.jpg",
-      rules: [
-        "The quiz will be on an online quiz platform.",
-        "There will be 3 rounds.",
-        "Quiz will be on Coding, Logical and Reasoning, and Quantitative.",
-        "Registration amount ₹50.",
-        "Judges' and event heads' decisions will be considered final.",
-      ],
-      participant: ["It is a solo game.", "Total 25 participants."],
-      time: ["Coding : 1:00AM - 3:00PM", "Result : 3:00PM - 5:00PM"],
-      price: ["🥇1st prize:- ₹500", "🥈2nd prize:- ₹300", "🥉3rd prize:- ₹200"],
-      venue: "TIMSCDR",
-    };
-  } else if (eventName === "bgmi") {
-    data = {
-      title: "BGMI",
-      summary: "🎮🔥 Battle, survive, and claim victory! 🔥🎮",
-      description:
-        "Get ready to drop in, loot up, and fight for survival in the ultimate battleground! Team up, strategize, and outlast your opponents to secure the top spot. Only the strongest will claim victory in this high-stakes BGMI showdown!",
-      banner: "bgmi.jpg",
-      rules: [
-        "ID level should be 20+.",
-        "Squad match minimum playing players should be 3.",
-        "Players should have Miramar match.",
-        "Triggers are not allowed.",
-        "Teams caught using bugs/hacks will be disqualified.",
-        "Abusive language is not allowed.",
-        "Latest point system will be followed.",
-        "Use of emulators and iPads is strictly prohibited.",
-        "Time limit will be 1 hour.",
-      ],
-      participant: ["Squad Team min 3 member"],
-      time: ["9:00AM - 5:00PM"],
-      price: [""],
-      venue: "TIMSCDR",
-    };
-  } else if (eventName === "valorant") {
-    data = {
-      title: "Valorant",
-      summary: "🎯🔫 Tactical shooter, strategic plays, ultimate victory! 🔥🎮",
-      description:
-        "Step into the world of intense tactical combat! Assemble your squad, master your agents, and outplay your opponents with strategy and precision. Only the most skilled team will rise to the top in this high-stakes Valorant showdown!",
-      banner: "valorant.webp",
-      rules: [
-        "Players should have their respective Riot ID.",
-        "Teams caught using bugs/hacks will be disqualified.",
-        "Map banning system will be followed.",
-        "Abusive language is not allowed (trash talk is acceptable).",
-        "BO1 (Knockout System).",
-        "Players can bring their own keyboard and mouse.",
-        "There will be 3 rounds.",
-        "Time limit will be 1 hour.",
-        "Each team can have 5 players with 2 substitutes.",
-        "Judge’s and event heads’ decisions will be considered final.",
-      ],
-      participant: ["5 players with 2 substitutes."],
-      time: ["9:00AM - 5:00PM"],
-      price: [""],
-      venue: "TIMSCDR",
+      participant: ["Team of 8-10"],
+      time: ["N/A"],
+      price: ["N/A"],
+      venue: "Venue Will Be Revealed Soon",
     };
   }
+
+  //    else if (eventName === "tugofwar") {
+  //     data = {
+  //       title: "Tug of War",
+  //       summary: "💪🏽🔥 Strength, teamwork, and ultimate power—pull to win! 💪🏽🔥",
+  //       description:
+  //         "Gather your team and prepare for an epic battle of strength and endurance! Coordination, resilience, and determination will decide who emerges victorious in this ultimate test of teamwork.",
+  //       banner: "tugofwar.jpg",
+  //       rules: [
+  //         "Theme: Open.",
+  //         "1 team is permitted per contingent.",
+  //         "A team of 8-10 students from the same college.",
+  //         "Use of props is allowed.",
+  //         "They are expected to report an hour in advance.",
+  //         "They must carry the soft copy of the background music in their mobiles and must notify the event head at least 2 days prior to the event.",
+  //         "Time limit: For each performance will be 10 minutes.",
+  //         "No obscene language or unethical practices must be done during the course of the event.",
+  //         "Any form of such vulgarity found will lead to debarring the participant from the event.",
+  //         "Judge's decision will be final.",
+  //       ],
+  //       participant: ["N/A"],
+  //       time: ["N/A"],
+  //       price: ["N/A"],
+  //       venue: "TIMSCDR",
+  //     };
+  //   }
 
   console.log(eventName);
   return (
@@ -196,7 +144,7 @@ export default function TechnicalSubEvents() {
         <div className="absolute inset-0 bg-[url('/placeholder.svg?height=500&width=1920')] bg-cover bg-center">
           <div
             style={{ backgroundImage: `url('/banner/${data.banner}')` }}
-            className="absolute inset-0 bg-cover bg-center  opacity-30"
+            className="absolute inset-0 bg-cover bg-top  opacity-30"
           />
         </div>
 

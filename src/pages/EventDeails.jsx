@@ -36,7 +36,7 @@ export default function EventDetails() {
         "🥈2nd prize:- ₹1,800",
         "🥉3rd prize:- ₹1,200",
       ],
-      venue: "Venue Will Be Revealed Soon",
+      venue: "TIMSCDR",
     };
   } else if (eventName === "framefusion") {
     data = {
@@ -54,7 +54,7 @@ export default function EventDetails() {
       participant: ["It is a solo game.", "Total 25 participants."],
       time: ["Coding : 9:00AM - 3:00PM", "Result : 3:00PM - 5:00PM"],
       price: ["🥇1st prize:- ₹500"],
-      venue: "Venue Will Be Revealed Soon",
+      venue: "TIMSCDR",
     };
   } else if (eventName === "codecraft") {
     data = {
@@ -74,7 +74,7 @@ export default function EventDetails() {
       participant: ["It is a solo game.", "Total 25 participants."],
       time: ["Coding : 10:00AM - 12:00PM", "Result : 12:00PM - 1:00PM"],
       price: ["🥇1st prize:- ₹800", "🥈2nd prize:- ₹500"],
-      venue: "Venue Will Be Revealed Soon",
+      venue: "TIMSCDR",
     };
   } else if (eventName === "qalakriti") {
     data = {
@@ -92,7 +92,7 @@ export default function EventDetails() {
       participant: ["It is a solo game.", "Total 25 participants."],
       time: ["Coding : 9:00AM - 3:00PM", "Result : 3:00PM - 5:00PM"],
       price: ["🥇1st prize:- ₹800", "🥈2nd prize:- ₹300"],
-      venue: "Venue Will Be Revealed Soon",
+      venue: "TIMSCDR",
     };
   } else if (eventName === "artofdebug") {
     data = {
@@ -109,7 +109,7 @@ export default function EventDetails() {
       participant: ["It is a solo game.", "Total 25 participants."],
       time: ["Coding : 10:00AM - 12:00PM", "Result : 12:00PM - 1:00PM"],
       price: ["🥇1st prize:- ₹600", "🥈2nd prize:- ₹300"],
-      venue: "Venue Will Be Revealed Soon",
+      venue: "TIMSCDR",
     };
   } else if (eventName === "qalamindquest") {
     data = {
@@ -127,7 +127,7 @@ export default function EventDetails() {
       participant: ["It is a solo game.", "Total 25 participants."],
       time: ["Coding : 1:00AM - 3:00PM", "Result : 3:00PM - 5:00PM"],
       price: ["🥇1st prize:- ₹500", "🥈2nd prize:- ₹300", "🥉3rd prize:- ₹200"],
-      venue: "Venue Will Be Revealed Soon",
+      venue: "TIMSCDR",
     };
   }
 

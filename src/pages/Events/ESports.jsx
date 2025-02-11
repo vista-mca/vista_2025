@@ -8,8 +8,9 @@ const events = [
   {
     id: 1,
     title: "BGMI",
-    date: "22 Feb 2025 (Day 1)",
+    date: "21 Feb 2025 (Day 1)",
     time: "9:00AM - 5:00PM",
+    link: "esports/bgmi",
     description:
       "At QalaInnovate, team up to build creative, real-world solutions in an intense and innovative coding marathon.",
     type: "IT",
@@ -17,8 +18,9 @@ const events = [
   {
     id: 2,
     title: "Velorant",
-    date: "22 Feb 2025 (Day 1)",
+    date: "21 Feb 2025 (Day 1)",
     time: "9:00AM - 5:00PM",
+    link: "esports/valorant",
     description:
       "In FrameFusion, let your creativity shine by crafting compelling short films that inspire, entertain, and tell powerful stories.",
     type: "IT",
@@ -119,6 +121,11 @@ export default function TechnicalEvent() {
                     <p className="text-gray-300 relative z-10 group-hover:text-white transition-colors duration-300">
                       {event.description}
                     </p>
+                    <div className="flex relative justify-center z-10">
+                      <a href={event.link}>
+                        <button className="button-10"> view more</button>
+                      </a>
+                    </div>
                   </motion.div>
                 </motion.div>
               </motion.div>
