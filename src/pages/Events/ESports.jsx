@@ -17,7 +17,7 @@ const events = [
   },
   {
     id: 2,
-    title: "Velorant",
+    title: "Valorant",
     date: "21 Feb 2025 (Day 1)",
     time: "9:00AM - 5:00PM",
     link: "esports/valorant",
