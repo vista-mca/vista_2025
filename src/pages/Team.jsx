@@ -17,6 +17,26 @@ import amitImg from "../assets/team/amit.jpg";
 import ayushImg from "../assets/team/ayush.jpg";
 import omkarImg from "../assets/team/omkar.jpg";
 import TeamCard from "@/components/TeamCard";
+
+import tushar1Img from "../assets/team/tushar.jpg";
+import tushar2Img from "../assets/team/tushar.png";
+import pranaliImg from "../assets/team/pranali.png";
+import akashImg from "../assets/team/akash.jpg";
+import ashishImg from "../assets/team/ashish.png";
+import gauravImg from "../assets/team/gaurav.png";
+import ajayImg from "../assets/team/ajay.png";
+import karanrajImg from "../assets/team/karanraj.png";
+import kamleshImg from "../assets/team/kamlesh.png";
+import vaishnaviImg from "../assets/team/vaishnavi.png";
+import teenaImg from "../assets/team/teena.png";
+import vaishaliImg from "../assets/team/vaishali.png";
+import omImg from "../assets/team/om.png";
+import mukendraImg from "../assets/team/mukendra.png";
+import ankurImg from "../assets/team/ankur.png";
+import swapnilImg from "../assets/team/swapnil.png";
+import priyankaImg from "../assets/team/priyanka.jpg";
+import sankalpImg from "../assets/team/sankalp.png";
+import sureshImg from "../assets/team/suresh.png";
 const chairMembers = [
   {
     id: 1,
@@ -163,41 +183,180 @@ const coreMembers = [
 const teamMembers = [
   {
     id: 1,
-    name: "Prem Sahu",
-    role: "President",
-    image: premImg,
-    linkedin: "https://www.linkedin.com/in/premsahudeveloper/",
-    instagram: "https://www.instagram.com/premsxhu/",
+    name: "Priyanka Gond",
+    role: "Head of UI/UX",
+    image: priyankaImg,
+    linkedin:
+      "https://www.linkedin.com/in/priyanka-gond-562400285?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    instagram:
+      "https://www.instagram.com/priyankagond_?igsh=MThlemZ6ZGljbThydw==",
     youtube: "",
     website: "",
   },
   {
     id: 2,
-    name: "Shruti Prajapati",
-    role: "Vice President",
-    image: shurtiImg,
-    linkedin: "https://www.linkedin.com/in/shrutii-prajapatii-499a75314/",
-    instagram: "https://www.instagram.com/__shruutzz__/",
+    name: "Swapnil Borkar",
+    role: "Head of Chess",
+    image: swapnilImg,
+    linkedin:
+      "https://www.linkedin.com/in/ashish-jha-838a96270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    instagram: "https://www.instagram.com/ashish1106_?igsh=ZHpnazF0cmpseTlt",
     youtube: "",
     website: "",
   },
   {
     id: 3,
-    name: "Aditya Patil",
-    role: "Event Co-ordinator",
-    image: adityaImg,
-    linkedin: "",
-    instagram: "https://www.instagram.com/8unnyyy.who/",
+    name: "Pranali Patel",
+    role: "Head of Quiz",
+    image: pranaliImg,
+    linkedin: "https://www.linkedin.com/in/pranali-parate-239029330",
+    instagram: "https://www.instagram.com/pranali0104?igsh=cDM2NmRta2N0ODk1",
     youtube: "",
     website: "",
   },
   {
     id: 4,
-    name: "Vijeta Yadav",
-    role: "Event Co-ordinator",
+    name: "Sankalp",
+    role: "Head of Table Tennis",
+    image: sankalpImg,
+    linkedin: "",
+    instagram: "https://www.instagram.com/snkalp_singh/",
+    youtube: "",
+    website: "",
+  },
+  {
+    id: 5,
+    name: "Kamlesh KANOJIA",
+    role: "Head of RAP",
     image: vijetaImg,
-    linkedin: "https://www.linkedin.com/in/vijeta-yadav-980028330/",
-    instagram: "https://www.instagram.com/whoisvijeta_._/",
+    linkedin: "",
+    instagram: "",
+    youtube: "",
+    website: "",
+  },
+  {
+    id: 6,
+    name: "Teena Thomas",
+    role: "Head of RAP",
+    image: teenaImg,
+    linkedin: "www.linkedin.com/in/teena-thomas9",
+    instagram: "https://www.instagram.com/teenathomass_9/",
+    youtube: "",
+    website: "",
+  },
+  {
+    id: 7,
+    name: "Suresh Choudhary",
+    role: "Head of Tug of War",
+    image: sureshImg,
+    linkedin: "www.linkedin.com/in/Sureshsirvis",
+    instagram: "https://www.instagram.com/Sureshsirvisc/",
+    youtube: "",
+    website: "",
+  },
+  {
+    id: 8,
+    name: "Tushar Suthar",
+    role: "Head of BGMI",
+    image: tushar1Img,
+    linkedin: "https://www.linkedin.com/in/tusharsuthar0511",
+    instagram:
+      "https://www.instagram.com/tushar._.suthar?igsh=OTdqYjVvaW1mbGEy&utm_source=qr",
+    youtube: "",
+    website: "",
+  },
+  {
+    id: 9,
+    name: "Ashish Jha",
+    role: "Head of Table Tennis",
+    image: ashishImg,
+    linkedin:
+      "https://www.linkedin.com/in/ashish-jha-838a96270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    instagram: "https://www.instagram.com/ashish1106_?igsh=ZHpnazF0cmpseTlt",
+    youtube: "",
+    website: "",
+  },
+  {
+    id: 10,
+    name: "Kamlesh Kanojia",
+    role: "Head of Rap",
+    image: kamleshImg,
+    linkedin: "",
+    instagram: "",
+    youtube: "",
+    website: "",
+  },
+  {
+    id: 11,
+    name: "Vaishali Singh",
+    role: "Head of Fashion Show",
+    image: vaishaliImg,
+    linkedin: "",
+    instagram: "https://www.instagram.com/rajputani_065",
+    youtube: "",
+    website: "",
+  },
+  {
+    id: 12,
+    name: "Om Shashank Patkar ",
+    role: "Head of Tug Of War",
+    image: omImg,
+    linkedin: "https://www.linkedin.com/in/om-patkar",
+    instagram: "https://www.instagram.com/ompatkar_?igsh=OGZnaTI0ZjRma2Nk",
+    youtube: "",
+    website: "",
+  },
+  {
+    id: 13,
+    name: "Mukendra Jaiswar  ",
+    role: "Head of Hackathon",
+    image: mukendraImg,
+    linkedin:
+      "https://www.linkedin.com/in/mukendra-jaiswar-311687226?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    instagram:
+      "https://www.instagram.com/mukendra_amj?igsh=MXE4dG13YmxhZHVqOA==",
+    youtube: "",
+    website: "",
+  },
+  {
+    id: 14,
+    name: "Tushar Shukla",
+    role: "Head of Tug Of War",
+    image: tushar2Img,
+    linkedin: "",
+    instagram:
+      "https://www.instagram.com/imtusharshukla?utm_source=qr&igsh=MTNvZm9jcnVodmtmbg==",
+    youtube: "",
+    website: "",
+  },
+  {
+    id: 15,
+    name: "Ankur Das",
+    role: "Head of Short Film",
+    image: ankurImg,
+    linkedin: "https://www.linkedin.com/in/ankur-das-b71769248",
+    instagram: "https://www.instagram.com/_ghost_hunter18",
+    youtube: "",
+    website: "",
+  },
+  {
+    id: 16,
+    name: "Anish Pandkar",
+    role: "Head of Carrom",
+    image: ashishImg,
+    linkedin: "",
+    instagram: "https://www.instagram.com/_anishpandkar_?igsh=Z3J1ZzZqNHRzNmV0",
+    youtube: "",
+    website: "",
+  },
+  {
+    id: 17,
+    name: "Vaishnavi Mandlik",
+    role: "Head of CP",
+    image: vaishnaviImg,
+    linkedin:
+      "https://www.linkedin.com/in/vaishnavi-mandlik-9917241b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    instagram: "https://www.instagram.com/_vaisshhh?igsh=cGlwb2h0M2M1cnEw",
     youtube: "",
     website: "",
   },
@@ -207,7 +366,7 @@ export default function Team() {
     <div>
       <Navbar />
       <section className="w-full py-8 bg-gray-950">
-        <div className="w-full bg-[#070F2B] h-[4.2rem]"></div>
+        <div className="w-full bg-[#070F2B] h-[2rem]"></div>
         <AnimatedBanner
           text="Our Team"
           bgColor="bg-[#070F2B]"
@@ -242,6 +401,31 @@ export default function Team() {
           </div>
           <div className="flex flex-wrap my-8 justify-center gap-6">
             {coreMembers.map(
+              ({
+                id,
+                name,
+                role,
+                linkedin,
+                instagram,
+                website,
+                youtube,
+                image,
+              }) => (
+                <TeamCard
+                  key={id}
+                  img={image}
+                  name={name}
+                  position={role}
+                  linkedin={linkedin}
+                  instagram={instagram}
+                  website={website}
+                  youtube={youtube}
+                />
+              )
+            )}
+          </div>
+          <div className="flex flex-wrap my-8 justify-center gap-6">
+            {teamMembers.map(
               ({
                 id,
                 name,

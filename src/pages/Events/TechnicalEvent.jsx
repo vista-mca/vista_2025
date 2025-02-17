@@ -38,6 +38,16 @@ const events = [
   },
   {
     id: 4,
+    title: "QalaMind Quest (Aptitude Test)",
+    date: "20 Feb 2025 (Day 1)",
+    time: "1:00AM - 5:00PM",
+    link: "technicals/qalamindquest",
+    description:
+      "QalaMind Quest pushes your logic and reasoning skills with puzzles and challenges designed to test your analytical abilities.",
+    type: "IT",
+  },
+  {
+    id: 5,
     title: "QalaKriti (UI Designing)",
     date: "21 Feb 2025 (Day 2)",
     time: "9:00AM - 5:00AM",
@@ -47,23 +57,13 @@ const events = [
     type: "IT",
   },
   {
-    id: 5,
+    id: 6,
     title: "Art Of Debug (Debugging)",
     date: "21 Feb 2025 (Day 2)",
     time: "10:00AM - 1:00PM",
     link: "technicals/artofdebug",
     description:
       "Art of Debug tests your problem-solving prowess as you hunt and fix tricky bugs in this exciting debugging challenge.",
-    type: "IT",
-  },
-  {
-    id: 6,
-    title: "QalaMind Quest (Aptitude Test)",
-    date: "21 Feb 2025 (Day 2)",
-    time: "1:00AM - 5:00PM",
-    link: "technicals/qalamindquest",
-    description:
-      "QalaMind Quest pushes your logic and reasoning skills with puzzles and challenges designed to test your analytical abilities.",
     type: "IT",
   },
 ];
