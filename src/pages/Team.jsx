@@ -184,7 +184,7 @@ const teamMembers = [
   {
     id: 1,
     name: "Priyanka Gond",
-    role: "Head of UI/UX",
+    role: "Incharge of UI/UX",
     image: priyankaImg,
     linkedin:
       "https://www.linkedin.com/in/priyanka-gond-562400285?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -196,7 +196,7 @@ const teamMembers = [
   {
     id: 2,
     name: "Swapnil Borkar",
-    role: "Head of Chess",
+    role: "Incharge of Chess",
     image: swapnilImg,
     linkedin:
       "https://www.linkedin.com/in/ashish-jha-838a96270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -207,7 +207,7 @@ const teamMembers = [
   {
     id: 3,
     name: "Pranali Patel",
-    role: "Head of Quiz",
+    role: "Incharge of Quiz",
     image: pranaliImg,
     linkedin: "https://www.linkedin.com/in/pranali-parate-239029330",
     instagram: "https://www.instagram.com/pranali0104?igsh=cDM2NmRta2N0ODk1",
@@ -217,7 +217,7 @@ const teamMembers = [
   {
     id: 4,
     name: "Sankalp",
-    role: "Head of Table Tennis",
+    role: "Incharge of Table Tennis",
     image: sankalpImg,
     linkedin: "",
     instagram: "https://www.instagram.com/snkalp_singh/",
@@ -225,19 +225,9 @@ const teamMembers = [
     website: "",
   },
   {
-    id: 5,
-    name: "Kamlesh KANOJIA",
-    role: "Head of RAP",
-    image: vijetaImg,
-    linkedin: "",
-    instagram: "",
-    youtube: "",
-    website: "",
-  },
-  {
     id: 6,
     name: "Teena Thomas",
-    role: "Head of RAP",
+    role: "Incharge of Fashion Show",
     image: teenaImg,
     linkedin: "www.linkedin.com/in/teena-thomas9",
     instagram: "https://www.instagram.com/teenathomass_9/",
@@ -247,7 +237,7 @@ const teamMembers = [
   {
     id: 7,
     name: "Suresh Choudhary",
-    role: "Head of Tug of War",
+    role: "Incharge of Tug of War",
     image: sureshImg,
     linkedin: "www.linkedin.com/in/Sureshsirvis",
     instagram: "https://www.instagram.com/Sureshsirvisc/",
@@ -257,7 +247,7 @@ const teamMembers = [
   {
     id: 8,
     name: "Tushar Suthar",
-    role: "Head of BGMI",
+    role: "Incharge of BGMI",
     image: tushar1Img,
     linkedin: "https://www.linkedin.com/in/tusharsuthar0511",
     instagram:
@@ -268,7 +258,7 @@ const teamMembers = [
   {
     id: 9,
     name: "Ashish Jha",
-    role: "Head of Table Tennis",
+    role: "Incharge of Table Tennis",
     image: ashishImg,
     linkedin:
       "https://www.linkedin.com/in/ashish-jha-838a96270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -279,7 +269,7 @@ const teamMembers = [
   {
     id: 10,
     name: "Kamlesh Kanojia",
-    role: "Head of Rap",
+    role: "Incharge of Rap",
     image: kamleshImg,
     linkedin: "",
     instagram: "",
@@ -289,7 +279,7 @@ const teamMembers = [
   {
     id: 11,
     name: "Vaishali Singh",
-    role: "Head of Fashion Show",
+    role: "Incharge of Fashion Show",
     image: vaishaliImg,
     linkedin: "",
     instagram: "https://www.instagram.com/rajputani_065",
@@ -299,7 +289,7 @@ const teamMembers = [
   {
     id: 12,
     name: "Om Shashank Patkar ",
-    role: "Head of Tug Of War",
+    role: "Incharge of Tug Of War",
     image: omImg,
     linkedin: "https://www.linkedin.com/in/om-patkar",
     instagram: "https://www.instagram.com/ompatkar_?igsh=OGZnaTI0ZjRma2Nk",
@@ -309,7 +299,7 @@ const teamMembers = [
   {
     id: 13,
     name: "Mukendra Jaiswar  ",
-    role: "Head of Hackathon",
+    role: "Incharge of Hackathon",
     image: mukendraImg,
     linkedin:
       "https://www.linkedin.com/in/mukendra-jaiswar-311687226?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -321,7 +311,7 @@ const teamMembers = [
   {
     id: 14,
     name: "Tushar Shukla",
-    role: "Head of Tug Of War",
+    role: "Incharge of Tug Of War",
     image: tushar2Img,
     linkedin: "",
     instagram:
@@ -332,7 +322,7 @@ const teamMembers = [
   {
     id: 15,
     name: "Ankur Das",
-    role: "Head of Short Film",
+    role: "Incharge of Short Film",
     image: ankurImg,
     linkedin: "https://www.linkedin.com/in/ankur-das-b71769248",
     instagram: "https://www.instagram.com/_ghost_hunter18",
@@ -342,7 +332,7 @@ const teamMembers = [
   {
     id: 16,
     name: "Anish Pandkar",
-    role: "Head of Carrom",
+    role: "Incharge of Carrom",
     image: ashishImg,
     linkedin: "",
     instagram: "https://www.instagram.com/_anishpandkar_?igsh=Z3J1ZzZqNHRzNmV0",
@@ -352,7 +342,7 @@ const teamMembers = [
   {
     id: 17,
     name: "Vaishnavi Mandlik",
-    role: "Head of CP",
+    role: "Incharge of CP",
     image: vaishnaviImg,
     linkedin:
       "https://www.linkedin.com/in/vaishnavi-mandlik-9917241b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
