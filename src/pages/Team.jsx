@@ -41,7 +41,7 @@ const chairMembers = [
   {
     id: 1,
     name: "Prem Sahu",
-    role: "President",
+    role: "Member",
     image: premImg,
     linkedin: "https://www.linkedin.com/in/premsahudeveloper/",
     instagram: "https://www.instagram.com/premsxhu/",
@@ -51,7 +51,7 @@ const chairMembers = [
   {
     id: 2,
     name: "Shruti Prajapati",
-    role: "Vice President",
+    role: "Member",
     image: shurtiImg,
     linkedin: "https://www.linkedin.com/in/shrutii-prajapatii-499a75314/",
     instagram: "https://www.instagram.com/__shruutzz__/",
@@ -61,7 +61,7 @@ const chairMembers = [
   {
     id: 3,
     name: "Aditya Patil",
-    role: "Event Co-ordinator",
+    role: "Member",
     image: adityaImg,
     linkedin: "",
     instagram: "https://www.instagram.com/8unnyyy.who/",
@@ -71,7 +71,7 @@ const chairMembers = [
   {
     id: 4,
     name: "Vijeta Yadav",
-    role: "Event Co-ordinator",
+    role: "Member",
     image: vijetaImg,
     linkedin: "https://www.linkedin.com/in/vijeta-yadav-980028330/",
     instagram: "https://www.instagram.com/whoisvijeta_._/",
@@ -83,7 +83,7 @@ const coreMembers = [
   {
     id: 1,
     name: "Alpesh Saxena",
-    role: "Public Relation Officer",
+    role: "Member",
     image: alpeshImg,
     instagram: "",
     linkedin: "https://www.linkedin.com/in/alpeshsaxena/",
@@ -93,7 +93,7 @@ const coreMembers = [
   {
     id: 7,
     name: "Priyanshu Chouhan",
-    role: "Public Relation Officer",
+    role: "Member",
     image: priyanshuImg,
     instagram: "https://www.instagram.com/thepriynshuchouhn",
     linkedin: "https://www.linkedin.com/in/priynshuchouhn/",
@@ -103,7 +103,7 @@ const coreMembers = [
   {
     id: 2,
     name: "Faizan Talikot",
-    role: "General Secretary",
+    role: "Member",
     image: faizanImg,
     instagram: "https://www.instagram.com/__faizzann__02",
     linkedin: "https://www.linkedin.com/in/faizan-talikot/",
@@ -113,7 +113,7 @@ const coreMembers = [
   {
     id: 3,
     name: "Sujata Prasad",
-    role: "Technical Head",
+    role: "Member",
     image: sujataImg,
     instagram: "https://www.instagram.com/sujataprasad01",
     linkedin: "https://www.linkedin.com/in/sujata-prasad/",
@@ -123,7 +123,7 @@ const coreMembers = [
   {
     id: 4,
     name: "Ayush Tiwari",
-    role: "Cultural Head",
+    role: "Member",
     image: ayushImg,
     instagram: "https://www.instagram.com/hey.ayussh",
     linkedin: "https://www.linkedin.com/in/ayush-tiwari-151866225",
@@ -132,7 +132,7 @@ const coreMembers = [
   {
     id: 5,
     name: "Adnan Shaikh",
-    role: "Sport Head",
+    role: "Member",
     image: adnanImg,
     instagram: "https://www.instagram.com/adnannshaikh9",
     linkedin: "https://www.linkedin.com/in/adnan-shaikh-289ab5234/",
@@ -142,7 +142,7 @@ const coreMembers = [
   {
     id: 6,
     name: "Alisha Malik",
-    role: "Sponsor Head",
+    role: "Member",
     image: alishaImg,
     instagram: "https://www.instagram.com/liisshhha/",
     linkedin: "https://www.linkedin.com/in/alisha-malik-a3808a330",
@@ -152,7 +152,7 @@ const coreMembers = [
   {
     id: 7,
     name: "Amit Tiwari",
-    role: "Logistic Head",
+    role: "Member",
     image: amitImg,
     instagram: "https://www.instagram.com/amittiwari__18/",
     linkedin: "https://www.linkedin.com/in/amit-tiwari-63a43134a/",
@@ -162,7 +162,7 @@ const coreMembers = [
   {
     id: 8,
     name: "Sakshi Singh",
-    role: "Creative Head",
+    role: "Member",
     image: sakshiImg,
     instagram: "https://www.instagram.com/sakshiisinghh_/",
     linkedin: "https://www.linkedin.com/in/sakshi-singh-4b7964237",
@@ -172,7 +172,7 @@ const coreMembers = [
   {
     id: 9,
     name: "Omkar Prajapati",
-    role: "Web Developer",
+    role: "Member",
     image: omkarImg,
     instagram: "https://www.instagram.com/omkar.devx/",
     linkedin: "https://www.linkedin.com/in/omkardevx/",
@@ -184,7 +184,7 @@ const teamMembers = [
   {
     id: 1,
     name: "Priyanka Gond",
-    role: "Incharge of UI/UX",
+    role: "Member",
     image: priyankaImg,
     linkedin:
       "https://www.linkedin.com/in/priyanka-gond-562400285?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -196,7 +196,7 @@ const teamMembers = [
   {
     id: 2,
     name: "Swapnil Borkar",
-    role: "Incharge of Chess",
+    role: "Member",
     image: swapnilImg,
     linkedin:
       "https://www.linkedin.com/in/ashish-jha-838a96270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -207,7 +207,7 @@ const teamMembers = [
   {
     id: 3,
     name: "Pranali Patel",
-    role: "Incharge of Quiz",
+    role: "Member",
     image: pranaliImg,
     linkedin: "https://www.linkedin.com/in/pranali-parate-239029330",
     instagram: "https://www.instagram.com/pranali0104?igsh=cDM2NmRta2N0ODk1",
@@ -217,7 +217,7 @@ const teamMembers = [
   {
     id: 4,
     name: "Sankalp",
-    role: "Incharge of Table Tennis",
+    role: "Member",
     image: sankalpImg,
     linkedin: "",
     instagram: "https://www.instagram.com/snkalp_singh/",
@@ -227,7 +227,7 @@ const teamMembers = [
   {
     id: 6,
     name: "Teena Thomas",
-    role: "Incharge of Fashion Show",
+    role: "Member",
     image: teenaImg,
     linkedin: "www.linkedin.com/in/teena-thomas9",
     instagram: "https://www.instagram.com/teenathomass_9/",
@@ -237,7 +237,7 @@ const teamMembers = [
   {
     id: 7,
     name: "Suresh Choudhary",
-    role: "Incharge of Tug of War",
+    role: "Member",
     image: sureshImg,
     linkedin: "www.linkedin.com/in/Sureshsirvis",
     instagram: "https://www.instagram.com/Sureshsirvisc/",
@@ -247,7 +247,7 @@ const teamMembers = [
   {
     id: 8,
     name: "Tushar Suthar",
-    role: "Incharge of BGMI",
+    role: "Member",
     image: tushar1Img,
     linkedin: "https://www.linkedin.com/in/tusharsuthar0511",
     instagram:
@@ -258,7 +258,7 @@ const teamMembers = [
   {
     id: 9,
     name: "Ashish Jha",
-    role: "Incharge of Table Tennis",
+    role: "Member",
     image: ashishImg,
     linkedin:
       "https://www.linkedin.com/in/ashish-jha-838a96270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -269,7 +269,7 @@ const teamMembers = [
   {
     id: 10,
     name: "Kamlesh Kanojia",
-    role: "Incharge of Rap",
+    role: "Member",
     image: kamleshImg,
     linkedin: "",
     instagram: "",
@@ -279,7 +279,7 @@ const teamMembers = [
   {
     id: 11,
     name: "Vaishali Singh",
-    role: "Incharge of Fashion Show",
+    role: "Member",
     image: vaishaliImg,
     linkedin: "",
     instagram: "https://www.instagram.com/rajputani_065",
@@ -289,7 +289,7 @@ const teamMembers = [
   {
     id: 12,
     name: "Om Shashank Patkar ",
-    role: "Incharge of Tug Of War",
+    role: "Member",
     image: omImg,
     linkedin: "https://www.linkedin.com/in/om-patkar",
     instagram: "https://www.instagram.com/ompatkar_?igsh=OGZnaTI0ZjRma2Nk",
@@ -299,7 +299,7 @@ const teamMembers = [
   {
     id: 13,
     name: "Mukendra Jaiswar  ",
-    role: "Incharge of Hackathon",
+    role: "Member",
     image: mukendraImg,
     linkedin:
       "https://www.linkedin.com/in/mukendra-jaiswar-311687226?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -311,7 +311,7 @@ const teamMembers = [
   {
     id: 14,
     name: "Tushar Shukla",
-    role: "Incharge of Tug Of War",
+    role: "Member",
     image: tushar2Img,
     linkedin: "",
     instagram:
@@ -322,7 +322,7 @@ const teamMembers = [
   {
     id: 15,
     name: "Ankur Das",
-    role: "Incharge of Short Film",
+    role: "Member",
     image: ankurImg,
     linkedin: "https://www.linkedin.com/in/ankur-das-b71769248",
     instagram: "https://www.instagram.com/_ghost_hunter18",
@@ -332,7 +332,7 @@ const teamMembers = [
   {
     id: 16,
     name: "Anish Pandkar",
-    role: "Incharge of Carrom",
+    role: "Member",
     image: ashishImg,
     linkedin: "",
     instagram: "https://www.instagram.com/_anishpandkar_?igsh=Z3J1ZzZqNHRzNmV0",
@@ -342,7 +342,7 @@ const teamMembers = [
   {
     id: 17,
     name: "Vaishnavi Mandlik",
-    role: "Incharge of CP",
+    role: "Member",
     image: vaishnaviImg,
     linkedin:
       "https://www.linkedin.com/in/vaishnavi-mandlik-9917241b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",

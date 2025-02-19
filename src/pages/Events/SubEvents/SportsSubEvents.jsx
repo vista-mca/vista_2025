@@ -102,35 +102,33 @@ export default function SportsSubEvents() {
       participant: ["Team of 8-10"],
       time: ["N/A"],
       price: ["N/A"],
-      venue: "Venue Will Be Revealed Soon",
+      venue: "TIMSCDR",
+    };
+  } else if (eventName === "tugofwar") {
+    data = {
+      title: "Tug of War",
+      summary: "💪🏽🔥 Strength, teamwork, and ultimate power—pull to win! 💪🏽🔥",
+      description:
+        "Gather your team and prepare for an epic battle of strength and endurance! Coordination, resilience, and determination will decide who emerges victorious in this ultimate test of teamwork.",
+      banner: "tugofwar.jpg",
+      rules: [
+        "Theme: Open.",
+        "1 team is permitted per contingent.",
+        "A team of 8-10 students from the same college.",
+        "Use of props is allowed.",
+        "They are expected to report an hour in advance.",
+        "They must carry the soft copy of the background music in their mobiles and must notify the event head at least 2 days prior to the event.",
+        "Time limit: For each performance will be 10 minutes.",
+        "No obscene language or unethical practices must be done during the course of the event.",
+        "Any form of such vulgarity found will lead to debarring the participant from the event.",
+        "Judge's decision will be final.",
+      ],
+      participant: ["N/A"],
+      time: ["N/A"],
+      price: ["N/A"],
+      venue: "TIMSCDR",
     };
   }
-
-  //    else if (eventName === "tugofwar") {
-  //     data = {
-  //       title: "Tug of War",
-  //       summary: "💪🏽🔥 Strength, teamwork, and ultimate power—pull to win! 💪🏽🔥",
-  //       description:
-  //         "Gather your team and prepare for an epic battle of strength and endurance! Coordination, resilience, and determination will decide who emerges victorious in this ultimate test of teamwork.",
-  //       banner: "tugofwar.jpg",
-  //       rules: [
-  //         "Theme: Open.",
-  //         "1 team is permitted per contingent.",
-  //         "A team of 8-10 students from the same college.",
-  //         "Use of props is allowed.",
-  //         "They are expected to report an hour in advance.",
-  //         "They must carry the soft copy of the background music in their mobiles and must notify the event head at least 2 days prior to the event.",
-  //         "Time limit: For each performance will be 10 minutes.",
-  //         "No obscene language or unethical practices must be done during the course of the event.",
-  //         "Any form of such vulgarity found will lead to debarring the participant from the event.",
-  //         "Judge's decision will be final.",
-  //       ],
-  //       participant: ["N/A"],
-  //       time: ["N/A"],
-  //       price: ["N/A"],
-  //       venue: "TIMSCDR",
-  //     };
-  //   }
 
   console.log(eventName);
   return (
@@ -299,7 +297,7 @@ export default function SportsSubEvents() {
               </motion.div>
             </motion.section>
 
-            <motion.section
+            {/* <motion.section
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -320,7 +318,7 @@ export default function SportsSubEvents() {
                   </p>
                 ))}
               </motion.div>
-            </motion.section>
+            </motion.section> */}
             <motion.section
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}

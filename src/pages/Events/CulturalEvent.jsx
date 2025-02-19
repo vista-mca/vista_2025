@@ -8,7 +8,7 @@ const events = [
   {
     id: 1,
     title: "Rap",
-    date: "22 Feb 2025 (Day 1)",
+    date: "21 Feb 2025 (Day 2)",
     time: "9:30AM - 10:30AM",
     link: "culturals/rap",
     description:
@@ -18,51 +18,11 @@ const events = [
   {
     id: 2,
     title: "Singing",
-    date: "22 Feb 2025 (Day 1)",
+    date: "21 Feb 2025 (Day 2)",
     time: "11:00AM - 1:00PM",
     link: "culturals/singing",
     description:
       "Strike for victory in electrifying carrom battles. Join us at the IT Event TECHBIT 4.0 for exciting matches and become the carrom champion",
-    type: "NON-IT",
-  },
-  {
-    id: 3,
-    title: "Solo Dance",
-    date: "23 Feb 2025 (Day 2)",
-    time: "9:00AM - 11:00AM",
-    link: "culturals/solodance",
-    description:
-      "Strategize, attack, triumph. Immerse yourself in riveting chess battles at the IT Event TECHBIT 4.0, where minds clash and only the savviest prevail",
-    type: "NON-IT",
-  },
-  {
-    id: 4,
-    title: "Group Dance",
-    date: "23 Feb 2025 (Day 2)",
-    time: "12:00PM - 2:00PM",
-    link: "culturals/groupdance",
-    description:
-      "Strategize, attack, triumph. Immerse yourself in riveting chess battles at the IT Event TECHBIT 4.0, where minds clash and only the savviest prevail",
-    type: "NON-IT",
-  },
-  {
-    id: 5,
-    title: "Fashion Show",
-    date: "23 Feb 2025 (Day 2)",
-    time: "2:00PM - 4:00PM",
-    link: "culturals/fashionshow",
-    description:
-      "Strategize, attack, triumph. Immerse yourself in riveting chess battles at the IT Event TECHBIT 4.0, where minds clash and only the savviest prevail",
-    type: "NON-IT",
-  },
-  {
-    id: 6,
-    title: "MR & MS Vista",
-    date: "23 Feb 2025 (Day 2)",
-    time: "4:00PM - 5:00PM",
-    link: "culturals/mrmsvista",
-    description:
-      "Strategize, attack, triumph. Immerse yourself in riveting chess battles at the IT Event TECHBIT 4.0, where minds clash and only the savviest prevail",
     type: "NON-IT",
   },
 ];
