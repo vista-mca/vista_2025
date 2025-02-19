@@ -8,7 +8,7 @@ const events = [
   {
     id: 1,
     title: "BGMI",
-    date: "21 Feb 2025 (Day 1)",
+    date: "20 Feb 2025 (Day 1)",
     time: "9:00AM - 5:00PM",
     link: "esports/bgmi",
     description:
@@ -18,7 +18,7 @@ const events = [
   {
     id: 2,
     title: "Valorant",
-    date: "21 Feb 2025 (Day 1)",
+    date: "20 Feb 2025 (Day 1)",
     time: "9:00AM - 5:00PM",
     link: "esports/valorant",
     description:

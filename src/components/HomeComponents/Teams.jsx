@@ -26,7 +26,7 @@ const Teams = () => {
     {
       id: 1,
       name: "Prem Sahu",
-      role: "President",
+      role: "Member",
       image: premImg,
       linkedin: "https://www.linkedin.com/in/premsahudeveloper/",
       instagram: "https://www.instagram.com/premsxhu/",
@@ -36,7 +36,7 @@ const Teams = () => {
     {
       id: 2,
       name: "Shruti Prajapati",
-      role: "Vice President",
+      role: "Member",
       image: shurtiImg,
       linkedin: "https://www.linkedin.com/in/shrutii-prajapatii-499a75314/",
       instagram: "https://www.instagram.com/__shruutzz__/",
@@ -46,7 +46,7 @@ const Teams = () => {
     {
       id: 3,
       name: "Aditya Patil",
-      role: "Event Co-ordinator",
+      role: "Member",
       image: adityaImg,
       linkedin: "",
       instagram: "https://www.instagram.com/8unnyyy.who/",
@@ -56,7 +56,7 @@ const Teams = () => {
     {
       id: 4,
       name: "Vijeta Yadav",
-      role: "Event Co-ordinator",
+      role: "Member",
       image: vijetaImg,
       linkedin: "https://www.linkedin.com/in/vijeta-yadav-980028330/",
       instagram: "https://www.instagram.com/whoisvijeta_._/",
@@ -68,7 +68,7 @@ const Teams = () => {
     {
       id: 1,
       name: "Alpesh Saxena",
-      role: "Public Relation Officer",
+      role: "Member",
       image: alpeshImg,
       instagram: "",
       linkedin: "https://www.linkedin.com/in/alpeshsaxena/",
@@ -78,7 +78,7 @@ const Teams = () => {
     {
       id: 7,
       name: "Priyanshu Chouhan",
-      role: "Public Relation Officer",
+      role: "Member",
       image: priyanshuImg,
       instagram: "https://www.instagram.com/thepriynshuchouhn",
       linkedin: "https://www.linkedin.com/in/priynshuchouhn/",
@@ -88,7 +88,7 @@ const Teams = () => {
     {
       id: 2,
       name: "Faizan Talikot",
-      role: "General Secretary",
+      role: "Member",
       image: faizanImg,
       instagram: "https://www.instagram.com/__faizzann__02",
       linkedin: "https://www.linkedin.com/in/faizan-talikot/",
@@ -98,7 +98,7 @@ const Teams = () => {
     {
       id: 3,
       name: "Sujata Prasad",
-      role: "Technical Head",
+      role: "Member",
       image: sujataImg,
       instagram: "https://www.instagram.com/sujataprasad01",
       linkedin: "https://www.linkedin.com/in/sujata-prasad/",
@@ -108,7 +108,7 @@ const Teams = () => {
     {
       id: 4,
       name: "Ayush Tiwari",
-      role: "Cultural Head",
+      role: "Member",
       image: ayushImg,
       instagram: "https://www.instagram.com/hey.ayussh",
       linkedin: "https://www.linkedin.com/in/ayush-tiwari-151866225",
@@ -117,7 +117,7 @@ const Teams = () => {
     {
       id: 5,
       name: "Adnan Shaikh",
-      role: "Sport Head",
+      role: "Member",
       image: adnanImg,
       instagram: "https://www.instagram.com/adnannshaikh9",
       linkedin: "https://www.linkedin.com/in/adnan-shaikh-289ab5234/",
@@ -127,7 +127,7 @@ const Teams = () => {
     {
       id: 6,
       name: "Alisha Malik",
-      role: "Sponsor Head",
+      role: "Member",
       image: alishaImg,
       instagram: "https://www.instagram.com/liisshhha/",
       linkedin: "https://www.linkedin.com/in/alisha-malik-a3808a330",
@@ -137,7 +137,7 @@ const Teams = () => {
     {
       id: 7,
       name: "Amit Tiwari",
-      role: "Logistic Head",
+      role: "Member",
       image: amitImg,
       instagram: "https://www.instagram.com/amittiwari__18/",
       linkedin: "https://www.linkedin.com/in/amit-tiwari-63a43134a/",
@@ -147,7 +147,7 @@ const Teams = () => {
     {
       id: 8,
       name: "Sakshi Singh",
-      role: "Creative Head",
+      role: "Member",
       image: sakshiImg,
       instagram: "https://www.instagram.com/sakshiisinghh_/",
       linkedin: "https://www.linkedin.com/in/sakshi-singh-4b7964237",
@@ -157,7 +157,7 @@ const Teams = () => {
     {
       id: 9,
       name: "Omkar Prajapati",
-      role: "Web Developer",
+      role: "Member",
       image: omkarImg,
       instagram: "https://www.instagram.com/omkar.devx/",
       linkedin: "https://www.linkedin.com/in/omkardevx/",

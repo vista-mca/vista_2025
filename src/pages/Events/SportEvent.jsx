@@ -36,6 +36,16 @@ const events = [
       "QalaKriti invites you to design visually stunning and user-friendly interfaces that leave a lasting impression.",
     type: "IT",
   },
+  {
+    id: 4,
+    title: "Tug Of War  ",
+    date: "20 Feb 2025 (Day 1)",
+    time: "10:00AM - 5:00PM",
+    link: "sports/tugofwar",
+    description:
+      "Gather your strength and teamwork in this ultimate test of power! Work together, hold your ground, and pull your way to victory against the opposing team.",
+    type: "IT",
+  },
 ];
 
 export default function SportEvent() {

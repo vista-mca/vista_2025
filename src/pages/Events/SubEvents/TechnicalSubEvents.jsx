@@ -358,28 +358,6 @@ export default function TechnicalSubEvents() {
               transition={{ duration: 0.6, delay: 0.4 }}
             >
               <div className="flex items-center gap-3 mb-6">
-                <Trophy className="w-6 h-6 text-yellow-500" />
-                <h2 className="text-2xl font-bold text-yellow-500">Price</h2>
-              </div>
-              <motion.div
-                className="bg-gray-900/50 p-6 rounded-xl border border-gray-800 backdrop-blur-sm"
-                whileHover={{ scale: 1.05 }}
-                transition={{ duration: 0.2 }}
-              >
-                {data.price.map((element, index) => (
-                  <p key={index} className="text-gray-300">
-                    {element}
-                  </p>
-                ))}
-              </motion.div>
-            </motion.section>
-            <motion.section
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-            >
-              <div className="flex items-center gap-3 mb-6">
                 <MapPin className="w-6 h-6 text-green-500" />
                 <h2 className="text-2xl font-bold text-green-500">Venue</h2>
               </div>
